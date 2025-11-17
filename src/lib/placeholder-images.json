@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile",
+      "description": "A professional headshot of Muhammad Zaidan Zhafiz Satrianto.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjMzNDAzOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "cleanova",
+      "description": "An image representing the Cleanova Circle project, perhaps showing a modern web dashboard or an IoT device for waste management.",
+      "imageUrl": "https://images.unsplash.com/photo-1758846946048-67de28f6bc8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3ZWIlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzYzMzIxODM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "web dashboard"
+    },
+    {
+      "id": "adibasa",
+      "description": "A screenshot or mockup of the Adibasa Android app for learning Javanese.",
+      "imageUrl": "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzYzMzQ4MTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mobile app"
+    },
+    {
+      "id": "streetware",
+      "description": "A screenshot or mockup of the StreetWare app, showing its geolocation and reporting features on a map.",
+      "imageUrl": "https://images.unsplash.com/photo-1759256243611-502772ac391b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzYzMzY5ODg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "map interface"
+    },
+    {
+      "id": "vehicare",
+      "description": "An image for the VehiCare app, possibly showing a vehicle on a map with tracking info or a maintenance schedule screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1666015212938-b96bb465f5b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncHMlMjB0cmFja2luZ3xlbnwwfHx8fDE3NjMzODE1NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gps tracking"
+    }
+  ]
 }
