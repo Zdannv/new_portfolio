@@ -3,13 +3,12 @@ import {
   Github,
   Linkedin,
   Mail,
-  MapPin,
-  Briefcase,
   Award,
   ChevronRight,
   Code,
   Users,
 } from "lucide-react";
+import Link from "next/link";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -27,7 +26,7 @@ import {
   ACHIEVEMENTS,
 } from "@/lib/data";
 import { placeholderImages } from "@/lib/placeholder-images";
-import { Icons } from "@/components/icons";
+import { SkillDialog } from "@/components/skill-dialog";
 
 const profileImage = placeholderImages.find(p => p.id === "profile");
 
@@ -97,41 +96,39 @@ export default function HomePage() {
             const projectImage = placeholderImages.find(p => p.id === project.imageId);
             const isReversed = index % 2 !== 0;
             return (
-              <div
-                key={project.title}
-                className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center ${
-                  isReversed ? "md:[&>*:last-child]:-order-1" : ""
-                }`}
-              >
-                <div>
-                  <h3 className="font-headline text-2xl font-bold text-primary">
-                    {project.title}
-                  </h3>
-                  <p className="mt-2 text-muted-foreground">{project.description}</p>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary">
-                        {tag}
-                      </Badge>
-                    ))}
+              <Link href={`/projects/${project.slug}`} key={project.slug} className="block group">
+                <div
+                  className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center transition-transform group-hover:scale-[1.02] duration-300 ${
+                    isReversed ? "md:[&>*:last-child]:-order-1" : ""
+                  }`}
+                >
+                  <div>
+                    <h3 className="font-headline text-2xl font-bold text-primary">
+                      {project.title}
+                    </h3>
+                    <p className="mt-2 text-muted-foreground">{project.description}</p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {project.tags.map((tag) => (
+                        <Badge key={tag} variant="secondary">
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
-                  <div className="mt-4 flex items-center gap-4">
-                     {project.technologies.map((Tech) => <Tech key={Tech.name} className="h-6 w-6 text-muted-foreground" />)}
-                  </div>
+                  {projectImage && (
+                    <div className="rounded-lg overflow-hidden shadow-2xl">
+                       <Image
+                          src={projectImage.imageUrl}
+                          alt={project.title}
+                          width={600}
+                          height={400}
+                          className="w-full h-auto object-cover"
+                          data-ai-hint={projectImage.imageHint}
+                        />
+                    </div>
+                  )}
                 </div>
-                {projectImage && (
-                  <div className="rounded-lg overflow-hidden shadow-2xl group">
-                     <Image
-                        src={projectImage.imageUrl}
-                        alt={project.title}
-                        width={600}
-                        height={400}
-                        className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105"
-                        data-ai-hint={projectImage.imageHint}
-                      />
-                  </div>
-                )}
-              </div>
+              </Link>
             );
           })}
         </div>
@@ -144,17 +141,18 @@ export default function HomePage() {
             Technical Skills
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            My proficiency in various technologies across the development stack.
+            My proficiency in various technologies. Click a skill to see related projects and evidence.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {SKILLS.map((skill) => (
-              <Badge
-                key={skill}
-                className="px-4 py-2 text-sm font-medium border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-                variant="outline"
-              >
-                {skill}
-              </Badge>
+              <SkillDialog key={skill.name} skill={skill}>
+                <Badge
+                  className="px-4 py-2 text-sm font-medium border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer"
+                  variant="outline"
+                >
+                  {skill.name}
+                </Badge>
+              </SkillDialog>
             ))}
           </div>
         </div>
@@ -172,16 +170,18 @@ export default function HomePage() {
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {LEADERSHIP_EXPERIENCE.map((exp) => (
-            <Card key={exp.organization} className="flex flex-col">
-              <CardHeader>
-                <CardTitle>{exp.role}</CardTitle>
-                <CardDescription className="font-semibold text-primary">{exp.organization}</CardDescription>
-                <p className="text-sm text-muted-foreground">{exp.period}</p>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <p>{exp.description}</p>
-              </CardContent>
-            </Card>
+             <Link href={`/experience/${exp.slug}`} key={exp.slug} className="block group">
+              <Card className="flex flex-col h-full transition-transform group-hover:scale-105 duration-300">
+                <CardHeader>
+                  <CardTitle>{exp.role}</CardTitle>
+                  <CardDescription className="font-semibold text-primary">{exp.organization}</CardDescription>
+                  <p className="text-sm text-muted-foreground">{exp.period}</p>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p>{exp.description}</p>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </section>
