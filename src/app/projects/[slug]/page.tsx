@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { Github, PlayCircle } from "lucide-react";
+import { Github, PlayCircle, ArrowLeft } from "lucide-react";
 import { getProjectBySlug, getImageById } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -33,6 +33,14 @@ export default function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <div className="container py-12 md:py-20">
+       <div className="mb-8">
+        <Button asChild variant="ghost">
+          <Link href="/">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Kembali ke Beranda
+          </Link>
+        </Button>
+      </div>
       <header className="mb-12 text-center">
         <h1 className="font-headline text-4xl font-bold tracking-tight text-primary sm:text-5xl">
           {project.title}

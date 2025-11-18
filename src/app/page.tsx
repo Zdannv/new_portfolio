@@ -7,6 +7,7 @@ import {
   ChevronRight,
   Code,
   Users,
+  ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -16,6 +17,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -98,7 +100,7 @@ export default function HomePage() {
             return (
               <Link href={`/projects/${project.slug}`} key={project.slug} className="block group">
                 <div
-                  className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center transition-transform group-hover:scale-[1.02] duration-300 ${
+                  className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center transition-transform group-hover:scale-[1.02] duration-300 relative ${
                     isReversed ? "md:[&>*:last-child]:-order-1" : ""
                   }`}
                 >
@@ -113,6 +115,9 @@ export default function HomePage() {
                           {tag}
                         </Badge>
                       ))}
+                    </div>
+                     <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      View Details <ArrowRight className="h-4 w-4" />
                     </div>
                   </div>
                   {projectImage && (
@@ -180,6 +185,11 @@ export default function HomePage() {
                 <CardContent className="flex-grow">
                   <p>{exp.description}</p>
                 </CardContent>
+                 <CardFooter className="justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-primary">
+                    See More <ArrowRight className="h-4 w-4" />
+                  </div>
+                </CardFooter>
               </Card>
             </Link>
           ))}
