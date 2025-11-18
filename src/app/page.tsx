@@ -208,8 +208,8 @@ export default function HomePage() {
             </p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {ACHIEVEMENTS.map((ach) => (
-              <Card key={ach.title} className="text-center">
+            {ACHIEVEMENTS.map((ach, index) => (
+              <Card key={`${ach.title}-${index}`} className="text-center">
                 <CardHeader>
                   <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                     <Award className="h-6 w-6 text-primary" />
