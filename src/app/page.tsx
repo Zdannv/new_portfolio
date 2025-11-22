@@ -100,7 +100,7 @@ export default function HomePage() {
             return (
               <Link href={`/projects/${project.slug}`} key={project.slug} className="block group">
                 <div
-                  className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center transition-transform group-hover:scale-[1.02] duration-300 relative ${
+                  className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center transition-all duration-300 ease-in-out group-hover:shadow-2xl group-hover:-translate-y-2 rounded-lg p-4 md:p-0 ${
                     isReversed ? "md:[&>*:last-child]:-order-1" : ""
                   }`}
                 >
@@ -116,12 +116,12 @@ export default function HomePage() {
                         </Badge>
                       ))}
                     </div>
-                     <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      View Details <ArrowRight className="h-4 w-4" />
+                     <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">
+                      View Details <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </div>
                   </div>
                   {projectImage && (
-                    <div className="rounded-lg overflow-hidden shadow-2xl">
+                    <div className="rounded-lg overflow-hidden shadow-xl">
                        <Image
                           src={projectImage.imageUrl}
                           alt={project.title}
@@ -176,7 +176,7 @@ export default function HomePage() {
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {LEADERSHIP_EXPERIENCE.map((exp) => (
              <Link href={`/experience/${exp.slug}`} key={exp.slug} className="block group">
-              <Card className="flex flex-col h-full transition-transform group-hover:scale-105 duration-300">
+              <Card className="flex flex-col h-full transition-all duration-300 ease-in-out group-hover:shadow-xl group-hover:-translate-y-2">
                 <CardHeader>
                   <CardTitle>{exp.role}</CardTitle>
                   <CardDescription className="font-semibold text-primary">{exp.organization}</CardDescription>
@@ -185,9 +185,9 @@ export default function HomePage() {
                 <CardContent className="flex-grow">
                   <p>{exp.description}</p>
                 </CardContent>
-                 <CardFooter className="justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                 <CardFooter className="justify-end opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <div className="flex items-center gap-2 text-sm font-semibold text-primary">
-                    See More <ArrowRight className="h-4 w-4" />
+                    See More <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </div>
                 </CardFooter>
               </Card>
