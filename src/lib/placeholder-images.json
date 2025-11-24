@@ -9,7 +9,7 @@
     {
       "id": "adibasa",
       "description": "A screenshot or mockup of the Adibasa Android app for learning Javanese.",
-      "imageUrl": "/adibasacover.png",
+      "imageUrl": "/adibasa1.png",
       "imageHint": "mobile app"
     },
     {
@@ -62,7 +62,7 @@
     },
     {
       "id": "pens-osc-evidence-1",
-      "description": "Photo from a cybersecurity workshop at PENS OSC.",
+      "description": "Photo with the OSC team",
       "imageUrl": "/team-photo.jpg",
       "imageHint": "workshop photo"
     },
@@ -74,13 +74,13 @@
     },
     {
       "id": "efortech-evidence-1",
-      "description": "Team photo at Efortech.",
+      "description": "Team photo at Bappeda Kediri.",
       "imageUrl": "/trainer.jpg",
       "imageHint": "team photo"
     },
     {
       "id": "efortech-evidence-2",
-      "description": "Team photo at Efortech.",
+      "description": "Trainer Certificate.",
       "imageUrl": "/efortech.jpg",
       "imageHint": "team photo"
     },
