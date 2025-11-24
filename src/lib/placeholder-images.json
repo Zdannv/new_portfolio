@@ -21,7 +21,7 @@
     {
       "id": "vehicare",
       "description": "An image for the VehiCare app, possibly showing a vehicle on a map with tracking info or a maintenance schedule screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1579616043939-95d87a6e8512?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxncHMlMjB0cmFja2luZ3xlbnwwfHx8fDE3NjM5ODM3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/vehicare1.png",
       "imageHint": "gps tracking"
     },
     {
@@ -69,7 +69,7 @@
     {
       "id": "pens-osc-evidence-2",
       "description": "Certificate of appreciation from PENS OSC.",
-      "imageUrl": "/presentation.jpg",
+      "imageUrl": "/perwakilanosc.png",
       "imageHint": "certificate appreciation"
     },
     {
@@ -93,19 +93,19 @@
     {
       "id": "cert-jna",
       "description": "Junior Network Administrator Competency Certificate",
-      "imageUrl": "https://images.unsplash.com/photo-1664526937033-fe2c11f1be25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxuZXR3b3JrJTIwY2VydGlmaWNhdGV8ZW58MHx8fHwxNzYzOTkwMTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/admin.jpg",
       "imageHint": "network certificate"
     },
     {
       "id": "ieee-cert",
       "description": "Surat Keterangan Aktif Organisasi IEEE SB PENS",
-      "imageUrl": "https://images.unsplash.com/photo-1755540735876-ff503cf594fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxvcmdhbml6YXRpb24lMjBjZXJ0aWZpY2F0ZXxlbnwwfHx8fDE3NjM5OTIwMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/ieee.jpg",
       "imageHint": "organization certificate"
     },
     {
       "id": "osjur-cert",
       "description": "Sertifikat Officer Liaison Ospek Jurusan",
-      "imageUrl": "https://images.unsplash.com/photo-1622768761362-d8f1bff37f36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxldmVudCUyMGNlcnRpZmljYXRlfGVufDB8fHx8MTc2Mzk5MjAxNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/LO.png",
       "imageHint": "event certificate"
     }
   ]

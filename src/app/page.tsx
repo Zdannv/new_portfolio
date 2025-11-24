@@ -51,24 +51,24 @@ export default function HomePage() {
             A passionate Informatics Engineering student with a strong interest in software development, computer networks, and cybersecurity. Eager to apply my skills and learn within collaborative, forward-thinking teams.
           </p>
           <div className="mt-10 flex items-center justify-center md:justify-start gap-x-6">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" data-cursor-pointer>
               <a href="#contact">
                 <Mail className="mr-2 h-5 w-5" />
                 Get in Touch
               </a>
             </Button>
-            <Button asChild variant="link" className="text-foreground">
+            <Button asChild variant="link" className="text-foreground" data-cursor-pointer>
               <a href="#projects">
                 My Projects <ChevronRight className="ml-1 h-4 w-4" />
               </a>
             </Button>
           </div>
           <div className="mt-8 flex items-center justify-center md:justify-start gap-x-6">
-            <a href="https://github.com/zaidanzha" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+            <a href="https://github.com/zaidanzha" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary" data-cursor-pointer>
               <Github className="h-6 w-6" />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/muhammad-zaidan-zhafiz-satrianto-a42a95389/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+            <a href="https://www.linkedin.com/in/muhammad-zaidan-zhafiz-satrianto-a42a95389/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary" data-cursor-pointer>
               <Linkedin className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>
             </a>
@@ -101,7 +101,7 @@ export default function HomePage() {
             const projectImage = placeholderImages.find(p => p.id === project.imageId);
             const isReversed = index % 2 !== 0;
             return (
-              <Link href={`/projects/${project.slug}`} key={project.slug} className="block group">
+              <Link href={`/projects/${project.slug}`} key={project.slug} className="block group" data-cursor-pointer>
                 <div
                   className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center transition-all duration-300 ease-in-out group-hover:shadow-2xl group-hover:-translate-y-2 rounded-lg p-4 md:p-0 ${
                     isReversed ? "md:[&>*:last-child]:-order-1" : ""
@@ -142,54 +142,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="skills" className="py-16 sm:py-20 bg-secondary">
-        <div className="container text-center">
-          <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            <Code className="inline-block h-8 w-8 mr-2 text-primary" />
-            Technical Skills
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            My proficiency in various technologies. Click a skill to see related projects and evidence.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            {SKILLS.map((skill) => (
-              <SkillDialog key={skill.name} skill={skill}>
-                <Badge
-                  className="px-4 py-2 text-sm font-medium border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer hover:scale-105"
-                  variant="outline"
-                >
-                  {skill.name}
-                </Badge>
-              </SkillDialog>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="soft-skills" className="py-16 sm:py-20">
-        <div className="container text-center">
-          <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            <MessageCircle className="inline-block h-8 w-8 mr-2 text-primary" />
-            Soft Skills
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            My interpersonal and professional abilities. Click a skill for validation.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            {SOFT_SKILLS.map((skill) => (
-              <SkillDialog key={skill.name} skill={skill}>
-                <Badge
-                  className="px-4 py-2 text-sm font-medium border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer hover:scale-105"
-                  variant="outline"
-                >
-                  {skill.name}
-                </Badge>
-              </SkillDialog>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="experience" className="container py-16 sm:py-20 bg-secondary">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
@@ -202,7 +154,7 @@ export default function HomePage() {
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {LEADERSHIP_EXPERIENCE.map((exp) => (
-             <Link href={`/experience/${exp.slug}`} key={exp.slug} className="block group">
+             <Link href={`/experience/${exp.slug}`} key={exp.slug} className="block group" data-cursor-pointer>
               <Card className="flex flex-col h-full transition-all duration-300 ease-in-out group-hover:shadow-xl group-hover:-translate-y-2">
                 <CardHeader>
                   <CardTitle>{exp.role}</CardTitle>
@@ -223,6 +175,56 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section id="skills" className="py-16 sm:py-20">
+        <div className="container text-center">
+          <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+            <Code className="inline-block h-8 w-8 mr-2 text-primary" />
+            Technical Skills
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            My proficiency in various technologies. Click a skill to see related projects and evidence.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            {SKILLS.map((skill) => (
+              <SkillDialog key={skill.name} skill={skill}>
+                <Badge
+                  className="px-4 py-2 text-sm font-medium border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer hover:scale-105"
+                  variant="outline"
+                  data-cursor-pointer
+                >
+                  {skill.name}
+                </Badge>
+              </SkillDialog>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      <section id="soft-skills" className="py-16 sm:py-20 bg-secondary">
+        <div className="container text-center">
+          <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+            <MessageCircle className="inline-block h-8 w-8 mr-2 text-primary" />
+            Soft Skills
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            My interpersonal and professional abilities. Click a skill for validation.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            {SOFT_SKILLS.map((skill) => (
+              <SkillDialog key={skill.name} skill={skill}>
+                <Badge
+                  className="px-4 py-2 text-sm font-medium border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer hover:scale-105"
+                  variant="outline"
+                  data-cursor-pointer
+                >
+                  {skill.name}
+                </Badge>
+              </SkillDialog>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="achievements" className="py-16 sm:py-20">
         <div className="container">
           <div className="text-center">
@@ -238,7 +240,7 @@ export default function HomePage() {
              {ACHIEVEMENTS.map((ach, index) => {
               const Icon = ach.type === "win" ? Award : Star;
               const content = (
-                <Card className="text-center flex flex-col h-full hover:scale-105 transition-transform duration-200">
+                <Card className="text-center flex flex-col h-full hover:scale-105 transition-transform duration-200" data-cursor-pointer>
                   <CardHeader>
                     <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                       <Icon className="h-6 w-6 text-primary" />
@@ -250,11 +252,11 @@ export default function HomePage() {
                   </CardContent>
                   {ach.url && (
                     <CardFooter className="justify-center">
-                      <Button variant="link" asChild>
-                        <a href={ach.url} target="_blank" rel="noopener noreferrer">
-                          Watch Video
-                        </a>
-                      </Button>
+                       <Button variant="link" asChild>
+                          <a href={ach.url} target="_blank" rel="noopener noreferrer">
+                            Watch Video
+                          </a>
+                        </Button>
                     </CardFooter>
                   )}
                 </Card>
@@ -262,7 +264,13 @@ export default function HomePage() {
 
               return (
                 <div key={`${ach.title}-${index}`} className="h-full">
-                  {content}
+                  {ach.url && ach.type === "win" ? (
+                     <a href={ach.url} target="_blank" rel="noopener noreferrer" className="block h-full">
+                      {content}
+                    </a>
+                  ) : (
+                    content
+                  )}
                 </div>
               );
             })}
@@ -278,7 +286,7 @@ export default function HomePage() {
           I'm always open to discussing new projects, creative ideas, or opportunities to be part of an innovative team. Feel free to reach out.
         </p>
         <div className="mt-8">
-          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" data-cursor-pointer>
             <a href="mailto:zaidanzhafifsatrianto@gmail.com">
               <Mail className="mr-2 h-5 w-5" />
               zaidanzhafifsatrianto@gmail.com

@@ -4,7 +4,12 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  cursor: none;
 }
+body *:hover {
+  cursor: none;
+}
+
 
 @layer base {
   :root {
