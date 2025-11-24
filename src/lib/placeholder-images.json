@@ -3,146 +3,140 @@
     {
       "id": "profile",
       "description": "A professional headshot of Muhammad Zaidan Zhafiz Satrianto.",
-      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjM4ODY0MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/formal-photo.jpg",
       "imageHint": "professional headshot"
     },
     {
       "id": "cleanova",
       "description": "An image representing the Cleanova Circle project, perhaps showing a modern web dashboard or an IoT device for waste management.",
-      "imageUrl": "https://images.unsplash.com/photo-1669023414166-a4cc7c0fe1f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3ZWIlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzYzOTcxOTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758846946048-67de28f6bc8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3ZWIlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzYzMzIxODM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "web dashboard"
     },
     {
       "id": "adibasa",
       "description": "A screenshot or mockup of the Adibasa Android app for learning Javanese.",
-      "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzYzOTc4MTU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/adibasacover.png",
       "imageHint": "mobile app"
     },
     {
       "id": "streetware",
       "description": "A screenshot or mockup of the StreetWare app, showing its geolocation and reporting features on a map.",
-      "imageUrl": "https://images.unsplash.com/photo-1603463251925-6ca87bc2f540?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYXAlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzYzOTQ4Nzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1759256243611-502772ac391b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzYzMzY5ODg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "map interface"
     },
     {
       "id": "vehicare",
       "description": "An image for the VehiCare app, possibly showing a vehicle on a map with tracking info or a maintenance schedule screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1628655207872-76a915ecc5e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxncHMlMjB0cmFja2luZ3xlbnwwfHx8fDE3NjM5ODM3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666015212938-b96bb465f5b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncHMlMjB0cmFja2luZ3xlbnwwfHx8fDE3NjMzODE1NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "gps tracking"
     },
     {
       "id": "cleanova-gallery-1",
       "description": "Cleanova architecture diagram",
-      "imageUrl": "https://images.unsplash.com/photo-1721244653657-ad6b91780492?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhcmNoaXRlY3R1cmUlMjBkaWFncmFtfGVufDB8fHx8MTc2Mzg3NzQ2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1706535849689-59e888460d10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcmNoaXRlY3R1cmUlMjBkaWFncmFtfGVufDB8fHx8MTc2MzM4MTkzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "architecture diagram"
     },
     {
       "id": "cleanova-gallery-2",
       "description": "Cleanova dashboard screenshot",
-      "imageUrl": "https://images.unsplash.com/photo-1677617587258-685aaf1b1e1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXNoYm9hcmQlMjB1aXxlbnwwfHx8fDE3NjM5ODM3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1653933686802-86d21b59b03b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXNoYm9hcmQlMjB1aXxlbnwwfHx8fDE3NjMzNjIxNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dashboard ui"
     },
     {
       "id": "cleanova-gallery-3",
       "description": "Cleanova data analytics view",
-      "imageUrl": "https://images.unsplash.com/photo-1737703638422-2cfa152cdcb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhbmFseXRpY3MlMjBjaGFydHxlbnwwfHx8fDE3NjM5NjQ3ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1737703638422-2cfa152cdcb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhbmFseXRpY3MlMjBjaGFydHxlbnwwfHx8fDE3NjMzNzExMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "analytics chart"
     },
     {
       "id": "adibasa-gallery-1",
       "description": "Adibasa app user flow diagram",
-      "imageUrl": "https://images.unsplash.com/photo-1634078111133-a1e12d6131b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx1eCUyMGZsb3d8ZW58MHx8fHwxNzYzOTgzNzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/adibasa1.png",
       "imageHint": "ux flow"
     },
     {
       "id": "adibasa-gallery-2",
       "description": "Adibasa app high-fidelity mockup",
-      "imageUrl": "https://images.unsplash.com/photo-1629494893504-d41e26a02631?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2JpbGUlMjBtb2NrdXB8ZW58MHx8fHwxNzYzOTgzNzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/adibasa2.png",
       "imageHint": "mobile mockup"
     },
     {
       "id": "streetware-gallery-1",
       "description": "Streetware app screenshot of reporting feature",
-      "imageUrl": "https://images.unsplash.com/photo-1762340273332-89b40f2868ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2JpbGUlMjBmb3JtfGVufDB8fHx8MTc2Mzk4MzczOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1762340277682-abb579ffa03c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2JpbGUlMjBmb3JtfGVufDB8fHx8MTc2MzQ1ODg4OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mobile form"
     },
     {
       "id": "streetware-gallery-2",
       "description": "Streetware app architecture diagram",
-      "imageUrl": "https://images.unsplash.com/photo-1595843102703-96f6a6580cd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhcmNoaXRlY3R1cmUlMjBkaWFncmFtfGVufDB8fHx8MTc2Mzg3NzQ2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1721244653652-268631ec049a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcmNoaXRlY3R1cmUlMjBkaWFncmFtfGVufDB8fHx8MTc2MzM4MTkzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "architecture diagram"
     },
     {
       "id": "streetware-gallery-3",
       "description": "Streetware backend security rules example",
-      "imageUrl": "https://images.unsplash.com/photo-1555001196-9b3d5c9ae0c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29kZSUyMHNuaXBwZXR8ZW58MHx8fHwxNzYzOTE3MDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1649451844931-57e22fc82de3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29kZSUyMHNuaXBwZXR8ZW58MHx8fHwxNzYzMzY1ODE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "code snippet"
     },
     {
       "id": "vehicare-gallery-1",
       "description": "VehiCare app maintenance schedule screen",
-      "imageUrl": "https://images.unsplash.com/photo-1598708521413-feaa4e69c01b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2JpbGUlMjBjYWxlbmRhcnxlbnwwfHx8fDE3NjM5ODM3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/vehicare1.png",
+      "imageHint": "mobile calendar"
+    },
+    {
+      "id": "vehicare-gallery-2",
+      "description": "VehiCare app maintenance schedule screen",
+      "imageUrl": "/vehicare2.png",
       "imageHint": "mobile calendar"
     },
     {
       "id": "pens-osc-evidence-1",
       "description": "Photo from a cybersecurity workshop at PENS OSC.",
-      "imageUrl": "https://images.unsplash.com/photo-1753162658718-0e1bfc465ea8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b3Jrc2hvcCUyMHBob3RvfGVufDB8fHx8MTc2Mzk4MzczOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/vehicare1.png",
       "imageHint": "workshop photo"
     },
     {
       "id": "pens-osc-evidence-2",
       "description": "Certificate of appreciation from PENS OSC.",
-      "imageUrl": "https://images.unsplash.com/photo-1660795468951-0b37051eb1b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjZXJ0aWZpY2F0ZSUyMGFwcHJlY2lhdGlvbnxlbnwwfHx8fDE3NjM5ODM3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1715173679369-18006e84d6a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjZXJ0aWZpY2F0ZSUyMGFwcHJlY2lhdGlvbnxlbnwwfHx8fDE3NjM0NTg4ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "certificate appreciation"
     },
     {
       "id": "efortech-evidence-1",
       "description": "Team photo at Efortech.",
-      "imageUrl": "https://images.unsplash.com/photo-1532498551838-b7a1cfac622e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWFtJTIwcGhvdG98ZW58MHx8fHwxNzYzOTI1MDc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/trainer.jpg",
       "imageHint": "team photo"
     },
     {
       "id": "cert-dts-tsa",
       "description": "Certificate for DTS TSA Cyber Champion 2024",
-      "imageUrl": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjeWJlcnNlY3VyaXR5JTIwY2VydGlmaWNhdGV8ZW58MHx8fHwxNzYzOTgzNzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y3liZXJzZWN1cml0eSUyMGNlcnRpZmljYXRlfGVufDB8fHx8MTc2MzQ1ODg4OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cybersecurity certificate"
     },
     {
       "id": "cert-duta-pelajar",
       "description": "Finalist certificate for Duta Pelajar Putra 2023",
-      "imageUrl": "https://images.unsplash.com/photo-1614036417651-efe5912149d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmaW5hbGlzdCUyMGNlcnRpZmljYXRlfGVufDB8fHx8MTc2Mzk4MzczOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589578235287-c2264eb4a18f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbGlzdCUyMGNlcnRpZmljYXRlfGVufDB8fHx8fDE3NjM2MzE5NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "finalist certificate"
     },
     {
       "id": "cert-gemastik-cyber",
       "description": "Participant certificate for Gemastik 2024 Cybersecurity",
-      "imageUrl": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5JTIwY29tcGV0aXRpb258ZW58MHx8fHwxNzYzOTgzNzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1699923330689-53f7c9e078c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjeWJlcnNlY3VyaXR5JTIwY29tcGV0aXRpb258ZW58MHx8fHwxNzYzNjMyMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cybersecurity competition"
     },
     {
       "id": "cert-fasilkom-uiux",
       "description": "Participant certificate for Fasilkom UI/UX Competition 2024",
-      "imageUrl": "https://images.unsplash.com/photo-1760037028636-6f42428aeeee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1aSUyMHV4JTIwY29tcGV0aXRpb258ZW58MHx8fHwxNzYzOTgzNzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1559028004-1f959540b615?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1aSUyMHV4JTIwY29tcGV0aXRpb258ZW58MHx8fHwxNzYzNjMyMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ui ux competition"
     },
     {
       "id": "cert-technofair-ctf",
       "description": "Participant certificate for Technofair CTF 2024",
-      "imageUrl": "https://picsum.photos/seed/certtechnofair/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1681363659298-6391a27e7428?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjdGYlMjBjb21wZXRpdGlvbnxlbnwwfHx8fDE3NjM2MzIwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ctf competition"
-    },
-    {
-      "id": "cert-gemastik-uiux",
-      "description": "Participant certificate for Gemastik 2025 UI/UX Design",
-      "imageUrl": "https://images.unsplash.com/photo-1559028012-481c04fa702d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1aSUyMHV4JTIwZGVzaWdufGVufDB8fHx8MTc2Mzk4MzczOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ui ux design"
-    },
-    {
-      "id": "cert-ja-titan",
-      "description": "3rd Winner JA Titan Business Competition",
-      "imageUrl": "https://images.unsplash.com/photo-1573798484153-da43eda898f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxidXNpbmVzcyUyMGNvbXBldGl0aW9ufGVufDB8fHx8MTc2Mzk4MzczOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business competition"
     }
   ]
 }

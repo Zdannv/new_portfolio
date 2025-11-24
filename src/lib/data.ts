@@ -41,19 +41,19 @@ export type Skill = {
 }
 
 export const PROJECTS: Project[] = [
-  {
-    slug: "cleanova-circle",
-    title: "Cleanova Circle (Web App)",
-    role: "Full-Stack Web Developer",
-    description: "A subscription-based web application to promote the Cleannova brand, featuring an online course-like experience with exclusive video tutorials.",
-    longDescription: "Cleanova Circle is a subscription-based web application I developed to promote the Cleannova brand. Built with Next.js and Supabase, the platform offers an online course-like experience where users can access exclusive video tutorials on cleaning and maintenance. Key features include an admin-managed authentication system, dynamic video progress tracking to save and resume playback, and secure content delivery using Row Level Security (RLS) and Signed URLs from Supabase Storage. This project demonstrates my ability to build a secure, functional, and user-friendly full-stack application with modern technology.",
-    tags: ["Full-Stack", "Web Development", "Subscription"],
-    technologies: [Icons.nextjs, Icons.supabase],
-    imageId: "cleanova",
-    galleryImageIds: ["cleanova-gallery-1", "cleanova-gallery-2", "cleanova-gallery-3"],
-    githubUrl: "https://github.com/zaidanzha/cleanova-circle",
-    liveDemoUrl: "https://cleanova.vercel.app/",
-  },
+  // {
+  //   slug: "cleanova-circle",
+  //   title: "Cleanova Circle (Web App)",
+  //   role: "Full-Stack Web Developer",
+  //   description: "A subscription-based web application to promote the Cleannova brand, featuring an online course-like experience with exclusive video tutorials.",
+  //   longDescription: "Cleanova Circle is a subscription-based web application I developed to promote the Cleannova brand. Built with Next.js and Supabase, the platform offers an online course-like experience where users can access exclusive video tutorials on cleaning and maintenance. Key features include an admin-managed authentication system, dynamic video progress tracking to save and resume playback, and secure content delivery using Row Level Security (RLS) and Signed URLs from Supabase Storage. This project demonstrates my ability to build a secure, functional, and user-friendly full-stack application with modern technology.",
+  //   tags: ["Full-Stack", "Web Development", "Subscription"],
+  //   technologies: [Icons.nextjs, Icons.supabase],
+  //   imageId: "cleanova",
+  //   galleryImageIds: ["cleanova-gallery-1", "cleanova-gallery-2", "cleanova-gallery-3"],
+  //   githubUrl: "https://github.com/zaidanzha/cleanova-circle",
+  //   liveDemoUrl: "https://cleanova.vercel.app/",
+  // },
   {
     slug: "adibasa-app",
     title: "Adibasa (Android App)",
@@ -75,7 +75,7 @@ export const PROJECTS: Project[] = [
     tags: ["Mobile App", "E-Government", "Product Owner"],
     technologies: [Icons.flutter, Icons.supabase],
     imageId: "streetware",
-    galleryImageIds: ["streetware-gallery-1", "streetware-gallery-2", "streetware-gallery-3"],
+    galleryImageIds: ["streetware-gallery-1", "streetware-gallery-2"],
     githubUrl: "https://github.com/zaidanzha/streetware",
   },
   {
@@ -87,19 +87,19 @@ export const PROJECTS: Project[] = [
     tags: ["Mobile App", "GPS Tracking", "Product Owner"],
     technologies: [Icons.flutter],
     imageId: "vehicare",
-    galleryImageIds: ["vehicare-gallery-1"],
+    galleryImageIds: ["vehicare-gallery-1", "vehicare-gallery-2"],
     githubUrl: "https://github.com/zaidanzha/vehicare",
   },
 ];
 
 export const SKILLS: Skill[] = [
   { name: "Flutter", relatedProjectSlugs: ["adibasa-app", "streetware-app", "vehicare-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
-  { name: "Next.js", relatedProjectSlugs: ["cleanova-circle"], relatedExperienceSlugs: [], certificateImageIds: [] },
+  { name: "Next.js", relatedProjectSlugs: [], relatedExperienceSlugs: [], certificateImageIds: [] },
   { name: "UI/UX Design", relatedProjectSlugs: ["adibasa-app"], relatedExperienceSlugs: [], certificateImageIds: ["cert-fasilkom-uiux", "cert-gemastik-uiux"] },
   { name: "Cybersecurity", relatedProjectSlugs: ["streetware-app"], relatedExperienceSlugs: ["pens-osc", "ieee-sb-pens"], certificateImageIds: ["cert-dts-tsa", "cert-gemastik-cyber", "cert-technofair-ctf"] },
   { name: "Computer Network", relatedProjectSlugs: [], relatedExperienceSlugs: ["pens-osc"], certificateImageIds: [] },
-  { name: "React", relatedProjectSlugs: ["cleanova-circle"], relatedExperienceSlugs: [], certificateImageIds: [] },
-  { name: "Supabase", relatedProjectSlugs: ["cleanova-circle", "streetware-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
+  { name: "React", relatedProjectSlugs: [], relatedExperienceSlugs: [], certificateImageIds: [] },
+  { name: "Supabase", relatedProjectSlugs: ["streetware-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
   { name: "Leadership", relatedProjectSlugs: [], relatedExperienceSlugs: ["pens-osc", "sc-smaniw", "hipmi-pens"], certificateImageIds: [] },
   { name: "Public Speaking", relatedProjectSlugs: [], relatedExperienceSlugs: ["osjur-pens", "efortech-dv"], certificateImageIds: ["cert-duta-pelajar"] },
   { name: "Video Editing", relatedProjectSlugs: ["adibasa-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
