@@ -9,7 +9,6 @@ import {
   Code,
   Users,
   ArrowRight,
-  Youtube,
   MessageCircle,
   Star,
 } from "lucide-react";
@@ -236,7 +235,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-             {ACHIEVEMENTS.map((ach) => {
+             {ACHIEVEMENTS.map((ach, index) => {
               const Icon = ach.type === "win" ? Award : Star;
               const content = (
                 <Card className="text-center flex flex-col h-full hover:scale-105 transition-transform duration-200">
@@ -262,7 +261,7 @@ export default function HomePage() {
               );
 
               return (
-                <div key={ach.title} className="h-full">
+                <div key={`${ach.title}-${index}`} className="h-full">
                   {content}
                 </div>
               );
