@@ -5,8 +5,8 @@ import type { ImagePlaceholder } from "./placeholder-images";
 
 export const NAV_LINKS = [
   { name: "Projects", href: "#projects" },
-  { name: "Skills", href: "#skills" },
   { name: "Experience", href: "#experience" },
+  { name: "Skills", href: "#skills" },
   { name: "Achievements", href: "#achievements" },
 ];
 
@@ -72,7 +72,7 @@ export const PROJECTS: Project[] = [
     title: "Adibasa (Mobile & Web App Ecosystem)",
     role: "Full-Stack Developer & AI Integrator",
     description: "An AI-powered language learning ecosystem with a gamified mobile app (Flutter) and a management web app (Next.js) to revive interest in the Javanese language.",
-    longDescription: "Adibasa is a comprehensive language learning ecosystem designed to address the declining interest in the Javanese language among the younger generation. It combines a gamified learning system with AI-driven conversation practice. As the lead developer, I was responsible for building core application features, including the interactive gamified lesson system, a competitive leaderboard, and user profile management. The core of Adibasa includes an Interactive Gamified Lesson feature using a Spaced Repetition System (SRS) to make learning vocabulary and sentence structure engaging. To complement this, an AI Chatbot powered by Google's Gemini 1.5 API allows users to practice real-world conversations in various Javanese speech levels (Ngoko, Krama). The AI is orchestrated via a FastAPI backend, enabling contextual and culturally nuanced dialogues. The entire system is built on a Clean Architecture pattern, with a Flutter mobile app for learners and a Next.js web app for administrative purposes, all supported by Firebase for backend services like authentication, database, and notifications.",
+    longDescription: "Adibasa is a comprehensive language learning ecosystem designed to address the declining interest in the Javanese language among the younger generation. As the lead developer, I was responsible for building core application features, including the interactive gamified lesson system, a competitive leaderboard, and user profile management. It combines a gamified learning system with AI-driven conversation practice. The core of Adibasa includes an Interactive Gamified Lesson feature using a Spaced Repetition System (SRS) to make learning vocabulary and sentence structure engaging. To complement this, an AI Chatbot powered by Google's Gemini 1.5 API allows users to practice real-world conversations in various Javanese speech levels (Ngoko, Krama). The AI is orchestrated via a FastAPI backend, enabling contextual and culturally nuanced dialogues. The entire system is built on a Clean Architecture pattern, with a Flutter mobile app for learners and a Next.js web app for administrative purposes, all supported by Firebase for backend services like authentication, database, and notifications.",
     tags: ["Mobile App", "Web App", "AI", "Gamification", "Full-Stack", "Next.js", "React", "Firebase", "Gemini API"],
     technologies: [Icons.flutter, Icons.nextjs, Icons.supabase],
     imageId: "adibasa",
@@ -116,6 +116,10 @@ export const SKILLS: Skill[] = [
     },
     {
         name: "Java & Kotlin",
+        validations: [
+            { type: 'project', title: 'Android Development Projects', slugs: ["adibasa-app", "streetware-app", "vehicare-app"] },
+            { type: 'experience', title: 'Related Coursework', slugs: [] }
+        ]
     },
     { 
         name: "Next.js",
@@ -131,6 +135,9 @@ export const SKILLS: Skill[] = [
     },
     {
         name: "HTML & CSS",
+        validations: [
+            { type: 'project', title: 'Web Projects', slugs: ["adibasa-app"] }
+        ]
     },
     {
         name: "JavaScript & TypeScript",
@@ -176,10 +183,12 @@ export const SKILLS: Skill[] = [
           { type: 'project', title: 'Related Projects', slugs: ["streetware-app"] }
         ]
     },
-    { name: "Video Editing", validations: [
-      { type: 'youtube', title: 'Duta Pelajar Performance', url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4" }
-    ]
-  },
+    { 
+        name: "Video Editing", 
+        validations: [
+            { type: 'youtube', title: 'Duta Pelajar Performance', url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4" }
+        ]
+    },
 ];
 
 
@@ -308,7 +317,7 @@ export const ACHIEVEMENTS: Achievement[] = [
         url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4",
     },
     {
-        title: "Participant (Cyber Champion)",
+        title: "Cyber Champion (CTF)",
         description: "DTS TSA CTF 2024",
         type: "participation"
     },
