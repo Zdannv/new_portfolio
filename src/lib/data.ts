@@ -59,7 +59,7 @@ export const PROJECTS: Project[] = [
   //   role: "Full-Stack Web Developer",
   //   description: "A subscription-based web application to promote the Cleannova brand, featuring an online course-like experience with exclusive video tutorials.",
   //   longDescription: "Cleanova Circle is a subscription-based web application I developed to promote the Cleannova brand. Built with Next.js and Supabase, the platform offers an online course-like experience where users can access exclusive video tutorials on cleaning and maintenance. Key features include an admin-managed authentication system, dynamic video progress tracking to save and resume playback, and secure content delivery using Row Level Security (RLS) and Signed URLs from Supabase Storage. This project demonstrates my ability to build a secure, functional, and user-friendly full-stack application with modern technology.",
-  //   tags: ["Full-Stack", "Web Development", "Subscription"],
+  //   tags: ["Full-Stack", "Web Development", "Subscription", "Next.js", "React", "Supabase"],
   //   technologies: [Icons.nextjs, Icons.supabase],
   //   imageId: "cleanova",
   //   galleryImageIds: ["cleanova-gallery-1", "cleanova-gallery-2", "cleanova-gallery-3"],
@@ -107,56 +107,74 @@ export const PROJECTS: Project[] = [
 ];
 
 export const SKILLS: Skill[] = [
-  { 
-    name: "Flutter", 
-    validations: [
-      { type: 'project', title: 'Related Projects', slugs: ["adibasa-app", "streetware-app", "vehicare-app"] }
-    ]
-  },
-  { 
-    name: "Next.js",
-    validations: [
-       { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
-    ]
-  },
     { 
-    name: "React", 
-    validations: [
-      { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
-    ]
-  },
-  { 
-    name: "UI/UX Design", 
-    validations: [
-      { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] },
-    ]
-  },
-  { 
-    name: "Cybersecurity", 
-    validations: [
-      { type: 'project', title: 'Related Projects', slugs: ["streetware-app"] },
-      { type: 'experience', title: 'Related Experience', slugs: ["pens-osc", "ieee-sb-pens"] },
-      { type: 'certificate', title: 'Relevant Certificates', itemIds: ["cert-dts-tsa"] },
-    ]
-  },
-  { 
-    name: "Computer Network", 
-    validations: [
-      { type: 'experience', title: 'Related Experience', slugs: ["pens-osc"] },
-      { type: 'certificate', title: 'Relevant Certificates', itemIds: ["cert-jna"] }
-    ]
-  },
-  { 
-    name: "Supabase", 
-    validations: [
-      { type: 'project', title: 'Related Projects', slugs: ["streetware-app"] }
-    ]
-  },
-  { name: "Video Editing", validations: [
-      { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+        name: "Flutter", 
+        validations: [
+            { type: 'project', title: 'Related Projects', slugs: ["adibasa-app", "streetware-app", "vehicare-app"] }
+        ]
+    },
+    { 
+        name: "Next.js",
+        validations: [
+           { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+        ]
+    },
+    { 
+        name: "React", 
+        validations: [
+          { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+        ]
+    },
+    {
+        name: "TypeScript",
+        validations: [
+          { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+        ]
+    },
+    {
+        name: "Tailwind CSS",
+        validations: [
+          { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+        ]
+    },
+    { 
+        name: "UI/UX Design", 
+        validations: [
+          { type: 'project', title: 'Related Projects', slugs: ["adibasa-app", "streetware-app", "vehicare-app"] },
+        ]
+    },
+    { 
+        name: "Cybersecurity", 
+        validations: [
+          { type: 'experience', title: 'Related Experience', slugs: ["pens-osc"] },
+          { type: 'certificate', title: 'Relevant Certificates', itemIds: ["cert-dts-tsa"] },
+        ]
+    },
+    { 
+        name: "Computer Network", 
+        validations: [
+          { type: 'experience', title: 'Related Experience', slugs: ["pens-osc"] },
+          { type: 'certificate', title: 'Relevant Certificates', itemIds: ["cert-jna"] }
+        ]
+    },
+    { 
+        name: "Firebase", 
+        validations: [
+          { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+        ]
+    },
+    { 
+        name: "Supabase", 
+        validations: [
+          { type: 'project', title: 'Related Projects', slugs: ["streetware-app"] }
+        ]
+    },
+    { name: "Video Editing", validations: [
+      { type: 'youtube', title: 'Duta Pelajar Performance', url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4" }
     ]
   },
 ];
+
 
 export const SOFT_SKILLS: Skill[] = [
     { 
@@ -300,5 +318,7 @@ export const getExperienceBySlug = (slug: string): Experience | undefined => {
 export const getImageById = (id: string): ImagePlaceholder | undefined => {
   return placeholderImages.find(p => p.id === id);
 };
+
+    
 
     
