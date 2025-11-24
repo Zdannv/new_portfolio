@@ -20,7 +20,7 @@ export function SiteFooter() {
             <span className="sr-only">GitHub</span>
           </a>
           <a
-            href="https://linkedin.com/in/muhammad-zaidan-zhafiz-satrianto"
+            href="https://www.linkedin.com/in/muhammad-zaidan-zhafiz-satrianto-a42a95389/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary"

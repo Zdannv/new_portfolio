@@ -44,8 +44,7 @@ export default function HomePage() {
             Muhammad Zaidan Zhafiz Satrianto
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            A passionate Mobile & Web Developer, Cybersecurity Enthusiast, and
-            UI/UX Designer. Crafting innovative digital solutions with a focus on user-centered design and robust technology.
+            A passionate Informatics Engineering student with a strong interest in software development, computer networks, and cybersecurity. Eager to apply my skills and learn within collaborative, forward-thinking teams.
           </p>
           <div className="mt-10 flex items-center justify-center md:justify-start gap-x-6">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
@@ -65,7 +64,7 @@ export default function HomePage() {
               <Github className="h-6 w-6" />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/muhammad-zaidan-zhafiz-satrianto" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+            <a href="https://www.linkedin.com/in/muhammad-zaidan-zhafiz-satrianto-a42a95389/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
               <Linkedin className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>
             </a>
@@ -183,7 +182,7 @@ export default function HomePage() {
                   <p className="text-sm text-muted-foreground">{exp.period}</p>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p>{exp.description}</p>
+                  <p className="line-clamp-3">{exp.description}</p>
                 </CardContent>
                  <CardFooter className="justify-end opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <div className="flex items-center gap-2 text-sm font-semibold text-primary">
@@ -234,9 +233,9 @@ export default function HomePage() {
         </p>
         <div className="mt-8">
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href="mailto:zaidanzhafiz@gmail.com">
+            <a href="mailto:zaidanzhafifsatrianto@gmail.com">
               <Mail className="mr-2 h-5 w-5" />
-              zaidanzhafiz@gmail.com
+              zaidanzhafifsatrianto@gmail.com
             </a>
           </Button>
         </div>

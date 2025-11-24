@@ -107,6 +107,30 @@
       "description": "Certificate for DTS TSA Cyber Champion 2024",
       "imageUrl": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y3liZXJzZWN1cml0eSUyMGNlcnRpZmljYXRlfGVufDB8fHx8MTc2MzQ1ODg4OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cybersecurity certificate"
+    },
+    {
+      "id": "cert-duta-pelajar",
+      "description": "Finalist certificate for Duta Pelajar Putra 2023",
+      "imageUrl": "https://images.unsplash.com/photo-1589578235287-c2264eb4a18f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbGlzdCUyMGNlcnRpZmljYXRlfGVufDB8fHx8fDE3NjM2MzE5NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finalist certificate"
+    },
+    {
+      "id": "cert-gemastik-cyber",
+      "description": "Participant certificate for Gemastik 2024 Cybersecurity",
+      "imageUrl": "https://images.unsplash.com/photo-1699923330689-53f7c9e078c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjeWJlcnNlY3VyaXR5JTIwY29tcGV0aXRpb258ZW58MHx8fHwxNzYzNjMyMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cybersecurity competition"
+    },
+    {
+      "id": "cert-fasilkom-uiux",
+      "description": "Participant certificate for Fasilkom UI/UX Competition 2024",
+      "imageUrl": "https://images.unsplash.com/photo-1559028004-1f959540b615?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1aSUyMHV4JTIwY29tcGV0aXRpb258ZW58MHx8fHwxNzYzNjMyMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ui ux competition"
+    },
+    {
+      "id": "cert-technofair-ctf",
+      "description": "Participant certificate for Technofair CTF 2024",
+      "imageUrl": "https://images.unsplash.com/photo-1681363659298-6391a27e7428?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjdGYlMjBjb21wZXRpdGlvbnxlbnwwfHx8fDE3NjM2MzIwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ctf competition"
     }
   ]
 }
