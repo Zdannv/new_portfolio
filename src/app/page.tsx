@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import {
   Github,
@@ -8,6 +9,7 @@ import {
   Code,
   Users,
   ArrowRight,
+  Youtube,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -151,7 +153,7 @@ export default function HomePage() {
             {SKILLS.map((skill) => (
               <SkillDialog key={skill.name} skill={skill}>
                 <Badge
-                  className="px-4 py-2 text-sm font-medium border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer"
+                  className="px-4 py-2 text-sm font-medium border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer hover:scale-105"
                   variant="outline"
                 >
                   {skill.name}
@@ -207,19 +209,38 @@ export default function HomePage() {
             </p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {ACHIEVEMENTS.map((ach, index) => (
-              <Card key={`${ach.title}-${index}`} className="text-center">
-                <CardHeader>
-                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                    <Award className="h-6 w-6 text-primary" />
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="text-lg">{ach.title}</CardTitle>
-                  <CardDescription className="mt-2">{ach.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
+            {ACHIEVEMENTS.map((ach, index) => {
+              const content = (
+                <Card key={`${ach.title}-${index}`} className="text-center flex flex-col h-full">
+                  <CardHeader>
+                    <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                      {ach.url ? <Youtube className="h-6 w-6 text-primary" /> : <Award className="h-6 w-6 text-primary" />}
+                    </div>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <CardTitle className="text-lg">{ach.title}</CardTitle>
+                    <CardDescription className="mt-2">{ach.description}</CardDescription>
+                  </CardContent>
+                  {ach.url && (
+                    <CardFooter className="justify-center">
+                       <Button variant="link" asChild>
+                          <a href={ach.url} target="_blank" rel="noopener noreferrer">
+                            Watch Video
+                          </a>
+                        </Button>
+                    </CardFooter>
+                  )}
+                </Card>
+              );
+
+              return ach.url ? (
+                <a href={ach.url} target="_blank" rel="noopener noreferrer" className="block h-full hover:scale-105 transition-transform duration-200">
+                  {content}
+                </a>
+              ) : (
+                <div className="h-full">{content}</div>
+              );
+            })}
           </div>
         </div>
       </section>

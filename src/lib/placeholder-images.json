@@ -21,13 +21,13 @@
     {
       "id": "streetware",
       "description": "A screenshot or mockup of the StreetWare app, showing its geolocation and reporting features on a map.",
-      "imageUrl": "https://images.unsplash.com/photo-1759256243611-502772ac391b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzYzMzY5ODg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/streetwarecover.png",
       "imageHint": "map interface"
     },
     {
       "id": "vehicare",
       "description": "An image for the VehiCare app, possibly showing a vehicle on a map with tracking info or a maintenance schedule screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1666015212938-b96bb465f5b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncHMlMjB0cmFja2luZ3xlbnwwfHx8fDE3NjMzODE1NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/vehicare1.png",
       "imageHint": "gps tracking"
     },
     {
@@ -63,13 +63,13 @@
     {
       "id": "streetware-gallery-1",
       "description": "Streetware app screenshot of reporting feature",
-      "imageUrl": "https://images.unsplash.com/photo-1762340277682-abb579ffa03c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2JpbGUlMjBmb3JtfGVufDB8fHx8MTc2MzQ1ODg4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/streetware1.png",
       "imageHint": "mobile form"
     },
     {
       "id": "streetware-gallery-2",
       "description": "Streetware app architecture diagram",
-      "imageUrl": "https://images.unsplash.com/photo-1721244653652-268631ec049a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcmNoaXRlY3R1cmUlMjBkaWFncmFtfGVufDB8fHx8MTc2MzM4MTkzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/streetware2.png",
       "imageHint": "architecture diagram"
     },
     {
@@ -93,19 +93,25 @@
     {
       "id": "pens-osc-evidence-1",
       "description": "Photo from a cybersecurity workshop at PENS OSC.",
-      "imageUrl": "/vehicare1.png",
+      "imageUrl": "/team-photo.jpg",
       "imageHint": "workshop photo"
     },
     {
       "id": "pens-osc-evidence-2",
       "description": "Certificate of appreciation from PENS OSC.",
-      "imageUrl": "https://images.unsplash.com/photo-1715173679369-18006e84d6a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjZXJ0aWZpY2F0ZSUyMGFwcHJlY2lhdGlvbnxlbnwwfHx8fDE3NjM0NTg4ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/presentation.jpg",
       "imageHint": "certificate appreciation"
     },
     {
       "id": "efortech-evidence-1",
       "description": "Team photo at Efortech.",
       "imageUrl": "/trainer.jpg",
+      "imageHint": "team photo"
+    },
+    {
+      "id": "efortech-evidence-2",
+      "description": "Team photo at Efortech.",
+      "imageUrl": "/efortech.jpg",
       "imageHint": "team photo"
     },
     {

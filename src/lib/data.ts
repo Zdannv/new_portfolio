@@ -1,3 +1,4 @@
+
 import { Icons } from "@/components/icons";
 import { placeholderImages } from "./placeholder-images";
 import type { ImagePlaceholder } from "./placeholder-images";
@@ -38,6 +39,12 @@ export type Skill = {
     relatedProjectSlugs: string[];
     relatedExperienceSlugs: string[];
     certificateImageIds: string[];
+}
+
+export type Achievement = {
+  title: string;
+  description: string;
+  url?: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -95,15 +102,15 @@ export const PROJECTS: Project[] = [
 export const SKILLS: Skill[] = [
   { name: "Flutter", relatedProjectSlugs: ["adibasa-app", "streetware-app", "vehicare-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
   { name: "Next.js", relatedProjectSlugs: [], relatedExperienceSlugs: [], certificateImageIds: [] },
-  { name: "UI/UX Design", relatedProjectSlugs: ["adibasa-app"], relatedExperienceSlugs: [], certificateImageIds: ["cert-fasilkom-uiux", "cert-gemastik-uiux"] },
-  { name: "Cybersecurity", relatedProjectSlugs: ["streetware-app"], relatedExperienceSlugs: ["pens-osc", "ieee-sb-pens"], certificateImageIds: ["cert-dts-tsa", "cert-gemastik-cyber", "cert-technofair-ctf"] },
+  { name: "UI/UX Design", relatedProjectSlugs: ["adibasa-app"], relatedExperienceSlugs: [], certificateImageIds: ["cert-gemastik-uiux", "cert-fasilkom-uiux"] },
+  { name: "Cybersecurity", relatedProjectSlugs: ["streetware-app"], relatedExperienceSlugs: ["pens-osc", "ieee-sb-pens"], certificateImageIds: ["cert-dts-tsa"] },
   { name: "Computer Network", relatedProjectSlugs: [], relatedExperienceSlugs: ["pens-osc"], certificateImageIds: [] },
   { name: "React", relatedProjectSlugs: [], relatedExperienceSlugs: [], certificateImageIds: [] },
   { name: "Supabase", relatedProjectSlugs: ["streetware-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
-  { name: "Leadership", relatedProjectSlugs: [], relatedExperienceSlugs: ["pens-osc", "sc-smaniw", "hipmi-pens"], certificateImageIds: [] },
+  { name: "Leadership", relatedProjectSlugs: [], relatedExperienceSlugs: ["pens-osc", "hipmi-pens"], certificateImageIds: [] },
   { name: "Public Speaking", relatedProjectSlugs: [], relatedExperienceSlugs: ["osjur-pens", "efortech-dv"], certificateImageIds: ["cert-duta-pelajar"] },
   { name: "Video Editing", relatedProjectSlugs: ["adibasa-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
-  { name: "Business Strategy", relatedProjectSlugs: [], relatedExperienceSlugs: ["sc-smaniw"], certificateImageIds: ["cert-ja-titan"] },
+  { name: "Business Strategy", relatedProjectSlugs: [], relatedExperienceSlugs: [], certificateImageIds: ["cert-ja-titan"] },
 ];
 
 export const LEADERSHIP_EXPERIENCE: Experience[] = [
@@ -155,7 +162,7 @@ export const LEADERSHIP_EXPERIENCE: Experience[] = [
             "Trained government agency staff on data visualization and dashboard development.",
             "Delivered technical material on Tableau for information system implementation."
         ],
-        evidenceImageIds: ["efortech-evidence-1"]
+        evidenceImageIds: ["efortech-evidence-1", "efortech-evidence-2"]
     },
      {
         slug: "osjur-pens",
@@ -169,44 +176,17 @@ export const LEADERSHIP_EXPERIENCE: Experience[] = [
         ],
         evidenceImageIds: []
     },
-    {
-        slug: "sc-smaniw",
-        role: "Vice President",
-        organization: "Student Company SMA Negeri 1 Waru",
-        period: "2020 - 2023",
-        description: "Launched an F&B business during COVID-19, achieving a 150% ROI, and helped expand the organization's recognition within the school.",
-        achievements: [
-            "Launched an F&B business during COVID-19, achieving a 150% ROI (Return on Investment)",
-            "Helped expand the organization to become more recognized and appreciated by the school."
-        ],
-        evidenceImageIds: []
-    },
 ];
 
-export const ACHIEVEMENTS = [
+export const ACHIEVEMENTS: Achievement[] = [
     {
         title: "3rd Winner",
         description: "JA Titan Business Competition, PJI",
     },
     {
-        title: "Top 5 Finalist",
+        title: "Favorite Winner",
         description: "Duta Pelajar Putra, JawaPos SMA Awards 2023",
-    },
-    {
-        title: "Cyber Security (CTF)",
-        description: "Gemastik 2024",
-    },
-    {
-        title: "UI/UX Design",
-        description: "Gemastik 2025",
-    },
-    {
-        title: "UI/UX Competition",
-        description: "Fasilkom UI 2024",
-    },
-    {
-        title: "Capture The Flag",
-        description: "Technofair 2024",
+        url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4",
     },
     {
         title: "Cyber Champion (CTF)",
