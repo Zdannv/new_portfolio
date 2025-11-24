@@ -211,7 +211,7 @@ export default function HomePage() {
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {ACHIEVEMENTS.map((ach, index) => {
               const content = (
-                <Card className="text-center flex flex-col h-full">
+                <Card className="text-center flex flex-col h-full hover:scale-105 transition-transform duration-200">
                   <CardHeader>
                     <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                       {ach.url ? <Youtube className="h-6 w-6 text-primary" /> : <Award className="h-6 w-6 text-primary" />}
@@ -233,11 +233,7 @@ export default function HomePage() {
                 </Card>
               );
 
-              return ach.url ? (
-                <a key={`${ach.title}-${index}`} href={ach.url} target="_blank" rel="noopener noreferrer" className="block h-full hover:scale-105 transition-transform duration-200">
-                  {content}
-                </a>
-              ) : (
+              return (
                 <div key={`${ach.title}-${index}`} className="h-full">{content}</div>
               );
             })}
