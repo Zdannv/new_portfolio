@@ -166,7 +166,7 @@ export default function HomePage() {
                 <CardContent className="flex-grow">
                   <p className="line-clamp-3">{exp.description}</p>
                 </CardContent>
-                 <CardFooter className="justify-end opacity-0 group-hover:opacity-100 transition-all duration-300">
+                 <CardFooter className="justify-end">
                   <div className="flex items-center gap-2 text-sm font-semibold text-primary">
                     See More <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </div>
