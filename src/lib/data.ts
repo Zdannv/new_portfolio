@@ -54,19 +54,6 @@ export type Achievement = {
 }
 
 export const PROJECTS: Project[] = [
-  // {
-  //   slug: "cleanova-circle",
-  //   title: "Cleanova Circle (Web App)",
-  //   role: "Full-Stack Web Developer",
-  //   description: "A subscription-based web application to promote the Cleannova brand, featuring an online course-like experience with exclusive video tutorials.",
-  //   longDescription: "Cleanova Circle is a subscription-based web application I developed to promote the Cleannova brand. Built with Next.js and Supabase, the platform offers an online course-like experience where users can access exclusive video tutorials on cleaning and maintenance. Key features include an admin-managed authentication system, dynamic video progress tracking to save and resume playback, and secure content delivery using Row Level Security (RLS) and Signed URLs from Supabase Storage. This project demonstrates my ability to build a secure, functional, and user-friendly full-stack application with modern technology.",
-  //   tags: ["Full-Stack", "Web Development", "Subscription", "Next.js", "React", "Supabase"],
-  //   technologies: [Icons.nextjs, Icons.supabase],
-  //   imageId: "cleanova",
-  //   galleryImageIds: ["cleanova-gallery-1", "cleanova-gallery-2", "cleanova-gallery-3"],
-  //   githubUrl: "https://github.com/zaidanzha/cleanova-circle",
-  //   liveDemoUrl: "https://cleanova.vercel.app/",
-  // },
   {
     slug: "adibasa-app",
     title: "Adibasa (Mobile & Web App Ecosystem)",
@@ -118,7 +105,6 @@ export const SKILLS: Skill[] = [
         name: "Java & Kotlin",
         validations: [
             { type: 'project', title: 'Android Development Projects', slugs: ["adibasa-app", "streetware-app", "vehicare-app"] },
-            { type: 'experience', title: 'Related Coursework', slugs: [] }
         ]
     },
     { 
@@ -318,7 +304,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     },
     {
         title: "Cyber Champion (CTF)",
-        description: "DTS TSA CTF 2024",
+        description: "DTS TSA CTF 2024 (Participation)",
         type: "participation"
     },
     {
