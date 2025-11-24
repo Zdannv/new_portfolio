@@ -48,6 +48,7 @@ export type Skill = {
 export type Achievement = {
   title: string;
   description: string;
+  url?: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -154,6 +155,12 @@ export const SOFT_SKILLS: Skill[] = [
             { type: 'experience', title: 'Related Experience', slugs: ["pens-osc", "hipmi-pens"] }
         ]
     },
+    {
+        name: "Communication",
+        validations: [
+            { type: 'experience', title: 'Related Experience', slugs: ["pens-osc", "efortech-dv", "osjur-pens"] }
+        ]
+    },
     { 
         name: "Public Speaking", 
         validations: [
@@ -161,6 +168,30 @@ export const SOFT_SKILLS: Skill[] = [
             { type: 'youtube', title: 'Duta Pelajar Performance', url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4" }
         ]
     },
+    {
+        name: "Problem Solving",
+        validations: [
+            { type: 'project', title: 'Related Projects', slugs: ["streetware-app", "vehicare-app", "adibasa-app"] }
+        ]
+    },
+    {
+        name: "Critical Thinking",
+        validations: [
+             { type: 'project', title: 'Related Projects', slugs: ["streetware-app", "vehicare-app"] }
+        ]
+    },
+    {
+        name: "Adaptability",
+        validations: [
+            { type: 'experience', title: 'Related Experience', slugs: ["pens-osc", "ieee-sb-pens", "hipmi-pens"] }
+        ]
+    },
+    {
+        name: "Creativity",
+        validations: [
+            { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+        ]
+    }
 ];
 
 export const LEADERSHIP_EXPERIENCE: Experience[] = [
@@ -236,6 +267,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     {
         title: "Favorite Winner",
         description: "Duta Pelajar Putra, JawaPos SMA Awards 2023",
+        url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4",
     },
     {
         title: "Cyber Champion (CTF)",
@@ -257,3 +289,5 @@ export const getExperienceBySlug = (slug: string): Experience | undefined => {
 export const getImageById = (id: string): ImagePlaceholder | undefined => {
   return placeholderImages.find(p => p.id === id);
 };
+
+    
