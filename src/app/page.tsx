@@ -11,6 +11,7 @@ import {
   ArrowRight,
   MessageCircle,
   Star,
+  Instagram,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -64,13 +65,17 @@ export default function HomePage() {
             </Button>
           </div>
           <div className="mt-8 flex items-center justify-center md:justify-start gap-x-6">
-            <a href="https://github.com/zaidanzha" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary" data-cursor-pointer>
+            <a href="https://github.com/Zdannv" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary" data-cursor-pointer>
               <Github className="h-6 w-6" />
               <span className="sr-only">GitHub</span>
             </a>
             <a href="https://www.linkedin.com/in/muhammad-zaidan-zhafiz-satrianto-a42a95389/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary" data-cursor-pointer>
               <Linkedin className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>
+            </a>
+             <a href="https://instagram.com/zdann_v" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary" data-cursor-pointer>
+              <Instagram className="h-6 w-6" />
+              <span className="sr-only">Instagram</span>
             </a>
           </div>
         </div>

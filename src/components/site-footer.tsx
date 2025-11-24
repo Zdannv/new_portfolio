@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Instagram } from "lucide-react";
 
 export function SiteFooter() {
   const currentYear = new Date().getFullYear();
@@ -11,7 +11,7 @@ export function SiteFooter() {
         </p>
         <div className="flex items-center gap-x-4">
           <a
-            href="https://github.com/zaidanzha"
+            href="https://github.com/Zdannv"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary"
@@ -27,6 +27,15 @@ export function SiteFooter() {
           >
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
+          </a>
+           <a
+            href="https://instagram.com/zdann_v"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary"
+          >
+            <Instagram className="h-5 w-5" />
+            <span className="sr-only">Instagram</span>
           </a>
         </div>
       </div>

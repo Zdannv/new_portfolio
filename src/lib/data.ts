@@ -64,7 +64,7 @@ export const PROJECTS: Project[] = [
     technologies: [Icons.flutter, Icons.nextjs, Icons.supabase],
     imageId: "adibasa",
     galleryImageIds: ["adibasa-gallery-1", "adibasa-gallery-2"],
-    githubUrl: "https://github.com/zaidanzha/adibasa-app",
+    githubUrl: "https://github.com/Zdannv/adibasa-app",
     liveDemoUrl: "https://adibasa.app",
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.adibasa.app&pcampaignid=web_share",
   },
@@ -78,7 +78,7 @@ export const PROJECTS: Project[] = [
     technologies: [Icons.flutter, Icons.supabase],
     imageId: "streetware",
     galleryImageIds: ["streetware-gallery-1", "streetware-gallery-2"],
-    githubUrl: "https://github.com/zaidanzha/streetware",
+    githubUrl: "https://github.com/Zdannv/streetware",
   },
   {
     slug: "vehicare-app",
@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
     technologies: [Icons.flutter],
     imageId: "vehicare",
     galleryImageIds: ["vehicare-gallery-1", "vehicare-gallery-2"],
-    githubUrl: "https://github.com/zaidanzha/vehicare",
+    githubUrl: "https://github.com/Zdannv/vehicare",
   },
 ];
 
