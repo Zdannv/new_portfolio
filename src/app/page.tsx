@@ -141,7 +141,7 @@ export default function HomePage() {
           })}
         </div>
       </section>
-
+      
       <section id="experience" className="container py-16 sm:py-20 bg-secondary">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
@@ -264,13 +264,7 @@ export default function HomePage() {
 
               return (
                 <div key={`${ach.title}-${index}`} className="h-full">
-                  {ach.url && ach.type === "win" ? (
-                     <a href={ach.url} target="_blank" rel="noopener noreferrer" className="block h-full">
-                      {content}
-                    </a>
-                  ) : (
-                    content
-                  )}
+                  {content}
                 </div>
               );
             })}
