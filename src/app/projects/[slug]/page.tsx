@@ -114,7 +114,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                 <Button asChild size="lg" variant="outline">
                     <Link href={project.liveDemoUrl} target="_blank">
                         <PlayCircle className="mr-2" />
-                        Live Demo
+                        Landing Page
                     </Link>
                 </Button>
             )}
