@@ -10,6 +10,7 @@ import {
   Users,
   ArrowRight,
   Youtube,
+  MessageCircle,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -26,6 +27,7 @@ import {
 import {
   PROJECTS,
   SKILLS,
+  SOFT_SKILLS,
   LEADERSHIP_EXPERIENCE,
   ACHIEVEMENTS,
 } from "@/lib/data";
@@ -164,7 +166,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="experience" className="container py-16 sm:py-20">
+      <section id="soft-skills" className="py-16 sm:py-20">
+        <div className="container text-center">
+          <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+            <MessageCircle className="inline-block h-8 w-8 mr-2 text-primary" />
+            Soft Skills
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            My interpersonal and professional abilities. Click a skill for validation.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            {SOFT_SKILLS.map((skill) => (
+              <SkillDialog key={skill.name} skill={skill}>
+                <Badge
+                  className="px-4 py-2 text-sm font-medium border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer hover:scale-105"
+                  variant="outline"
+                >
+                  {skill.name}
+                </Badge>
+              </SkillDialog>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" className="container py-16 sm:py-20 bg-secondary">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
             <Users className="inline-block h-8 w-8 mr-2 text-primary" />
@@ -197,7 +223,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="achievements" className="py-16 sm:py-20 bg-secondary">
+      <section id="achievements" className="py-16 sm:py-20">
         <div className="container">
           <div className="text-center">
             <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
@@ -209,32 +235,25 @@ export default function HomePage() {
             </p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {ACHIEVEMENTS.map((ach, index) => {
+            {ACHIEVEMENTS.map((ach) => {
               const content = (
                 <Card className="text-center flex flex-col h-full hover:scale-105 transition-transform duration-200">
                   <CardHeader>
                     <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                      {ach.url ? <Youtube className="h-6 w-6 text-primary" /> : <Award className="h-6 w-6 text-primary" />}
+                       <Award className="h-6 w-6 text-primary" />
                     </div>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <CardTitle className="text-lg">{ach.title}</CardTitle>
                     <CardDescription className="mt-2">{ach.description}</CardDescription>
                   </CardContent>
-                  {ach.url && (
-                    <CardFooter className="justify-center">
-                       <Button variant="link" asChild>
-                          <a href={ach.url} target="_blank" rel="noopener noreferrer">
-                            Watch Video
-                          </a>
-                        </Button>
-                    </CardFooter>
-                  )}
                 </Card>
               );
 
               return (
-                <div key={`${ach.title}-${index}`} className="h-full">{content}</div>
+                <div key={ach.title} className="h-full">
+                  {content}
+                </div>
               );
             })}
           </div>

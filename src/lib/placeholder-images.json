@@ -7,12 +7,6 @@
       "imageHint": "professional headshot"
     },
     {
-      "id": "cleanova",
-      "description": "An image representing the Cleanova Circle project, perhaps showing a modern web dashboard or an IoT device for waste management.",
-      "imageUrl": "https://images.unsplash.com/photo-1758846946048-67de28f6bc8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3ZWIlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzYzMzIxODM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "web dashboard"
-    },
-    {
       "id": "adibasa",
       "description": "A screenshot or mockup of the Adibasa Android app for learning Javanese.",
       "imageUrl": "/adibasacover.png",
@@ -29,24 +23,6 @@
       "description": "An image for the VehiCare app, possibly showing a vehicle on a map with tracking info or a maintenance schedule screen.",
       "imageUrl": "/vehicare1.png",
       "imageHint": "gps tracking"
-    },
-    {
-      "id": "cleanova-gallery-1",
-      "description": "Cleanova architecture diagram",
-      "imageUrl": "https://images.unsplash.com/photo-1706535849689-59e888460d10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcmNoaXRlY3R1cmUlMjBkaWFncmFtfGVufDB8fHx8MTc2MzM4MTkzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "architecture diagram"
-    },
-    {
-      "id": "cleanova-gallery-2",
-      "description": "Cleanova dashboard screenshot",
-      "imageUrl": "https://images.unsplash.com/photo-1653933686802-86d21b59b03b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXNoYm9hcmQlMjB1aXxlbnwwfHx8fDE3NjMzNjIxNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dashboard ui"
-    },
-    {
-      "id": "cleanova-gallery-3",
-      "description": "Cleanova data analytics view",
-      "imageUrl": "https://images.unsplash.com/photo-1737703638422-2cfa152cdcb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhbmFseXRpY3MlMjBjaGFydHxlbnwwfHx8fDE3NjMzNzExMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "analytics chart"
     },
     {
       "id": "adibasa-gallery-1",
@@ -86,9 +62,9 @@
     },
     {
       "id": "vehicare-gallery-2",
-      "description": "VehiCare app maintenance schedule screen",
+      "description": "VehiCare app map feature to find workshops",
       "imageUrl": "/vehicare2.png",
-      "imageHint": "mobile calendar"
+      "imageHint": "mobile map"
     },
     {
       "id": "pens-osc-evidence-1",
@@ -117,32 +93,14 @@
     {
       "id": "cert-dts-tsa",
       "description": "Certificate for DTS TSA Cyber Champion 2024",
-      "imageUrl": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y3liZXJzZWN1cml0eSUyMGNlcnRpZmljYXRlfGVufDB8fHx8MTc2MzQ1ODg4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjeWJlcnNlY3VyaXR5JTIwY2VydGlmaWNhdGV8ZW58MHx8fHwxNzYzOTgzNzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cybersecurity certificate"
     },
     {
-      "id": "cert-duta-pelajar",
-      "description": "Finalist certificate for Duta Pelajar Putra 2023",
-      "imageUrl": "https://images.unsplash.com/photo-1589578235287-c2264eb4a18f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbGlzdCUyMGNlcnRpZmljYXRlfGVufDB8fHx8fDE3NjM2MzE5NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "finalist certificate"
-    },
-    {
-      "id": "cert-gemastik-cyber",
-      "description": "Participant certificate for Gemastik 2024 Cybersecurity",
-      "imageUrl": "https://images.unsplash.com/photo-1699923330689-53f7c9e078c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjeWJlcnNlY3VyaXR5JTIwY29tcGV0aXRpb258ZW58MHx8fHwxNzYzNjMyMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cybersecurity competition"
-    },
-    {
-      "id": "cert-fasilkom-uiux",
-      "description": "Participant certificate for Fasilkom UI/UX Competition 2024",
-      "imageUrl": "https://images.unsplash.com/photo-1559028004-1f959540b615?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1aSUyMHV4JTIwY29tcGV0aXRpb258ZW58MHx8fHwxNzYzNjMyMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ui ux competition"
-    },
-    {
-      "id": "cert-technofair-ctf",
-      "description": "Participant certificate for Technofair CTF 2024",
-      "imageUrl": "https://images.unsplash.com/photo-1681363659298-6391a27e7428?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjdGYlMjBjb21wZXRpdGlvbnxlbnwwfHx8fDE3NjM2MzIwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ctf competition"
+      "id": "cert-jna",
+      "description": "Junior Network Administrator Competency Certificate",
+      "imageUrl": "https://images.unsplash.com/photo-1664526937033-fe2c11f1be25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxuZXR3b3JrJTIwY2VydGlmaWNhdGV8ZW58MHx8fHwxNzYzOTkwMTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "network certificate"
     }
   ]
 }

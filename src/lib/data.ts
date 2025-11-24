@@ -34,17 +34,20 @@ export type Experience = {
     evidenceImageIds: string[];
 }
 
+export type Validation = 
+    | { type: 'project'; title: string; slugs: string[] }
+    | { type: 'experience'; title: string; slugs: string[] }
+    | { type: 'certificate'; title: string; itemIds: string[] }
+    | { type: 'youtube'; title: string; url: string };
+
 export type Skill = {
     name: string;
-    relatedProjectSlugs: string[];
-    relatedExperienceSlugs: string[];
-    certificateImageIds: string[];
+    validations?: Validation[];
 }
 
 export type Achievement = {
   title: string;
   description: string;
-  url?: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -100,17 +103,64 @@ export const PROJECTS: Project[] = [
 ];
 
 export const SKILLS: Skill[] = [
-  { name: "Flutter", relatedProjectSlugs: ["adibasa-app", "streetware-app", "vehicare-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
-  { name: "Next.js", relatedProjectSlugs: [], relatedExperienceSlugs: [], certificateImageIds: [] },
-  { name: "UI/UX Design", relatedProjectSlugs: ["adibasa-app"], relatedExperienceSlugs: [], certificateImageIds: ["cert-gemastik-uiux", "cert-fasilkom-uiux"] },
-  { name: "Cybersecurity", relatedProjectSlugs: ["streetware-app"], relatedExperienceSlugs: ["pens-osc", "ieee-sb-pens"], certificateImageIds: ["cert-dts-tsa"] },
-  { name: "Computer Network", relatedProjectSlugs: [], relatedExperienceSlugs: ["pens-osc"], certificateImageIds: [] },
-  { name: "React", relatedProjectSlugs: [], relatedExperienceSlugs: [], certificateImageIds: [] },
-  { name: "Supabase", relatedProjectSlugs: ["streetware-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
-  { name: "Leadership", relatedProjectSlugs: [], relatedExperienceSlugs: ["pens-osc", "hipmi-pens"], certificateImageIds: [] },
-  { name: "Public Speaking", relatedProjectSlugs: [], relatedExperienceSlugs: ["osjur-pens", "efortech-dv"], certificateImageIds: ["cert-duta-pelajar"] },
-  { name: "Video Editing", relatedProjectSlugs: ["adibasa-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
-  { name: "Business Strategy", relatedProjectSlugs: [], relatedExperienceSlugs: [], certificateImageIds: ["cert-ja-titan"] },
+  { 
+    name: "Flutter", 
+    validations: [
+      { type: 'project', title: 'Related Projects', slugs: ["adibasa-app", "streetware-app", "vehicare-app"] }
+    ]
+  },
+  { 
+    name: "Next.js",
+    validations: []
+  },
+  { 
+    name: "UI/UX Design", 
+    validations: [
+      { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] },
+    ]
+  },
+  { 
+    name: "Cybersecurity", 
+    validations: [
+      { type: 'project', title: 'Related Projects', slugs: ["streetware-app"] },
+      { type: 'experience', title: 'Related Experience', slugs: ["pens-osc", "ieee-sb-pens"] },
+      { type: 'certificate', title: 'Relevant Certificates', itemIds: ["cert-dts-tsa"] },
+    ]
+  },
+  { 
+    name: "Computer Network", 
+    validations: [
+      { type: 'experience', title: 'Related Experience', slugs: ["pens-osc"] },
+      { type: 'certificate', title: 'Relevant Certificates', itemIds: ["cert-jna"] }
+    ]
+  },
+  { name: "React", validations: [] },
+  { 
+    name: "Supabase", 
+    validations: [
+      { type: 'project', title: 'Related Projects', slugs: ["streetware-app"] }
+    ]
+  },
+  { name: "Video Editing", validations: [
+      { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+    ]
+  },
+];
+
+export const SOFT_SKILLS: Skill[] = [
+    { 
+        name: "Leadership", 
+        validations: [
+            { type: 'experience', title: 'Related Experience', slugs: ["pens-osc", "hipmi-pens"] }
+        ]
+    },
+    { 
+        name: "Public Speaking", 
+        validations: [
+            { type: 'experience', title: 'Related Experience', slugs: ["osjur-pens", "efortech-dv"] },
+            { type: 'youtube', title: 'Duta Pelajar Performance', url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4" }
+        ]
+    },
 ];
 
 export const LEADERSHIP_EXPERIENCE: Experience[] = [
@@ -186,7 +236,6 @@ export const ACHIEVEMENTS: Achievement[] = [
     {
         title: "Favorite Winner",
         description: "Duta Pelajar Putra, JawaPos SMA Awards 2023",
-        url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4",
     },
     {
         title: "Cyber Champion (CTF)",
