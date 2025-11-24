@@ -130,8 +130,8 @@ export default function HomePage() {
                       ))}
                     </div>
                 </CardContent>
-                <CardFooter>
-                  <Button asChild className="w-full" data-cursor-pointer>
+                <CardFooter className="justify-end">
+                  <Button asChild variant="ghost" size="sm" data-cursor-pointer>
                     <Link href={`/projects/${project.slug}`}>
                       View Details
                       <ArrowRight className="ml-2 h-4 w-4" />
