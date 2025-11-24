@@ -95,14 +95,15 @@ export const PROJECTS: Project[] = [
 export const SKILLS: Skill[] = [
   { name: "Flutter", relatedProjectSlugs: ["adibasa-app", "streetware-app", "vehicare-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
   { name: "Next.js", relatedProjectSlugs: ["cleanova-circle"], relatedExperienceSlugs: [], certificateImageIds: [] },
-  { name: "UI/UX Design", relatedProjectSlugs: ["adibasa-app"], relatedExperienceSlugs: [], certificateImageIds: ["cert-fasilkom-uiux"] },
+  { name: "UI/UX Design", relatedProjectSlugs: ["adibasa-app"], relatedExperienceSlugs: [], certificateImageIds: ["cert-fasilkom-uiux", "cert-gemastik-uiux"] },
   { name: "Cybersecurity", relatedProjectSlugs: ["streetware-app"], relatedExperienceSlugs: ["pens-osc", "ieee-sb-pens"], certificateImageIds: ["cert-dts-tsa", "cert-gemastik-cyber", "cert-technofair-ctf"] },
   { name: "Computer Network", relatedProjectSlugs: [], relatedExperienceSlugs: ["pens-osc"], certificateImageIds: [] },
   { name: "React", relatedProjectSlugs: ["cleanova-circle"], relatedExperienceSlugs: [], certificateImageIds: [] },
   { name: "Supabase", relatedProjectSlugs: ["cleanova-circle", "streetware-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
   { name: "Leadership", relatedProjectSlugs: [], relatedExperienceSlugs: ["pens-osc", "sc-smaniw", "hipmi-pens"], certificateImageIds: [] },
-  { name: "Public Speaking", relatedProjectSlugs: [], relatedExperienceSlugs: ["osjur-pens", "efortech-dv"], certificateImageIds: [] },
+  { name: "Public Speaking", relatedProjectSlugs: [], relatedExperienceSlugs: ["osjur-pens", "efortech-dv"], certificateImageIds: ["cert-duta-pelajar"] },
   { name: "Video Editing", relatedProjectSlugs: ["adibasa-app"], relatedExperienceSlugs: [], certificateImageIds: [] },
+  { name: "Business Strategy", relatedProjectSlugs: [], relatedExperienceSlugs: ["sc-smaniw"], certificateImageIds: ["cert-ja-titan"] },
 ];
 
 export const LEADERSHIP_EXPERIENCE: Experience[] = [
