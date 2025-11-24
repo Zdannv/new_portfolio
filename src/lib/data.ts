@@ -67,12 +67,12 @@ export const PROJECTS: Project[] = [
   // },
   {
     slug: "adibasa-app",
-    title: "Adibasa (Android App)",
-    role: "Full-Stack Mobile Developer",
-    description: "A mobile language learning application designed to help migrant students in Surabaya learn practical Javanese.",
-    longDescription: "Adibasa is a mobile language learning application designed to help migrant students in Surabaya overcome communication barriers by teaching them practical Javanese. As the lead developer and designer, I was responsible for the end-to-end UI/UX design process, from conceptualization to creating a cohesive and user-friendly interface based on User-Centered Design principles. My work included slicing the finalized prototypes into a functional front-end, ensuring a smooth and responsive user experience. Furthermore, I developed and managed the promotional materials for the application, including designing posters and producing videos to effectively communicate its value proposition to the target audience.",
-    tags: ["Mobile App", "UI/UX Design", "Language Learning"],
-    technologies: [Icons.flutter],
+    title: "Adibasa (Mobile & Web App Ecosystem)",
+    role: "Full-Stack Developer & AI Integrator",
+    description: "An AI-powered language learning ecosystem with a gamified mobile app (Flutter) and a management web app (Next.js) to revive interest in the Javanese language.",
+    longDescription: "Adibasa is a comprehensive language learning ecosystem designed to address the declining interest in the Javanese language among the younger generation. It combines a gamified learning system with AI-driven conversation practice. The core of Adibasa includes an Interactive Gamified Lesson feature using a Spaced Repetition System (SRS) to make learning vocabulary and sentence structure engaging. To complement this, an AI Chatbot powered by Google's Gemini 1.5 API allows users to practice real-world conversations in various Javanese speech levels (Ngoko, Krama). The AI is orchestrated via a FastAPI backend, enabling contextual and culturally nuanced dialogues. The entire system is built on a Clean Architecture pattern, with a Flutter mobile app for learners and a Next.js web app for administrative purposes, all supported by Firebase for backend services like authentication, database, and notifications.",
+    tags: ["Mobile App", "Web App", "AI", "Gamification", "Full-Stack"],
+    technologies: [Icons.flutter, Icons.nextjs, Icons.supabase],
     imageId: "adibasa",
     galleryImageIds: ["adibasa-gallery-1", "adibasa-gallery-2"],
     githubUrl: "https://github.com/zaidanzha/adibasa-app",
@@ -112,7 +112,9 @@ export const SKILLS: Skill[] = [
   },
   { 
     name: "Next.js",
-    validations: []
+    validations: [
+       { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+    ]
   },
   { 
     name: "UI/UX Design", 
@@ -135,7 +137,9 @@ export const SKILLS: Skill[] = [
       { type: 'certificate', title: 'Relevant Certificates', itemIds: ["cert-jna"] }
     ]
   },
-  { name: "React", validations: [] },
+  { name: "React", validations: [
+      { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+  ] },
   { 
     name: "Supabase", 
     validations: [
