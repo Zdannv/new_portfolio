@@ -101,47 +101,44 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="mt-12 space-y-24">
-          {PROJECTS.map((project, index) => {
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {PROJECTS.map((project) => {
             const projectImage = placeholderImages.find(p => p.id === project.imageId);
-            const isReversed = index % 2 !== 0;
             return (
-              <Link href={`/projects/${project.slug}`} key={project.slug} className="block group" data-cursor-pointer>
-                <div
-                  className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center transition-all duration-300 ease-in-out group-hover:shadow-2xl group-hover:-translate-y-2 rounded-lg p-4 md:p-0 ${
-                    isReversed ? "md:[&>*:last-child]:-order-1" : ""
-                  }`}
-                >
-                  <div>
-                    <h3 className="font-headline text-2xl font-bold text-primary">
-                      {project.title}
-                    </h3>
-                    <p className="mt-2 text-muted-foreground">{project.description}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
+              <Card key={project.slug} className="flex flex-col overflow-hidden group">
+                {projectImage && (
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src={projectImage.imageUrl}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      data-ai-hint={projectImage.imageHint}
+                    />
+                  </div>
+                )}
+                <CardHeader>
+                  <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground line-clamp-3">{project.description}</p>
+                   <div className="mt-4 flex flex-wrap gap-2">
+                      {project.tags.slice(0, 3).map((tag) => (
                         <Badge key={tag} variant="secondary">
                           {tag}
                         </Badge>
                       ))}
                     </div>
-                     <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">
-                      View Details <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                    </div>
-                  </div>
-                  {projectImage && (
-                    <div className="rounded-lg overflow-hidden shadow-xl">
-                       <Image
-                          src={projectImage.imageUrl}
-                          alt={project.title}
-                          width={600}
-                          height={400}
-                          className="w-full h-auto object-cover"
-                          data-ai-hint={projectImage.imageHint}
-                        />
-                    </div>
-                  )}
-                </div>
-              </Link>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild className="w-full" data-cursor-pointer>
+                    <Link href={`/projects/${project.slug}`}>
+                      View Details
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
             );
           })}
         </div>
