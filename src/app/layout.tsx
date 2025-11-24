@@ -16,6 +16,9 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Zaidan's Digital Showcase",
   description: "A digital portfolio for Muhammad Zaidan Zhafiz Satrianto, showcasing projects, skills, and achievements.",
+  icons: {
+    icon: "/logo_adibasa.png",
+  },
 };
 
 export default function RootLayout({

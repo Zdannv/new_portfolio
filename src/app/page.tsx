@@ -205,7 +205,7 @@ export default function HomePage() {
         </div>
       </section>
       
-      <section id="soft-skills" className="py-16 sm:py-20 bg-secondary">
+      <section id="soft-skills" className="py-16 sm:py-20">
         <div className="container text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
             <MessageCircle className="inline-block h-8 w-8 mr-2 text-primary" />
