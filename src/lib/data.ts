@@ -22,6 +22,7 @@ export type Project = {
   galleryImageIds: string[];
   githubUrl?: string;
   liveDemoUrl?: string;
+  playStoreUrl?: string;
 };
 
 export type Experience = {
@@ -71,11 +72,13 @@ export const PROJECTS: Project[] = [
     role: "Full-Stack Developer & AI Integrator",
     description: "An AI-powered language learning ecosystem with a gamified mobile app (Flutter) and a management web app (Next.js) to revive interest in the Javanese language.",
     longDescription: "Adibasa is a comprehensive language learning ecosystem designed to address the declining interest in the Javanese language among the younger generation. It combines a gamified learning system with AI-driven conversation practice. The core of Adibasa includes an Interactive Gamified Lesson feature using a Spaced Repetition System (SRS) to make learning vocabulary and sentence structure engaging. To complement this, an AI Chatbot powered by Google's Gemini 1.5 API allows users to practice real-world conversations in various Javanese speech levels (Ngoko, Krama). The AI is orchestrated via a FastAPI backend, enabling contextual and culturally nuanced dialogues. The entire system is built on a Clean Architecture pattern, with a Flutter mobile app for learners and a Next.js web app for administrative purposes, all supported by Firebase for backend services like authentication, database, and notifications.",
-    tags: ["Mobile App", "Web App", "AI", "Gamification", "Full-Stack"],
+    tags: ["Mobile App", "Web App", "AI", "Gamification", "Full-Stack", "Next.js", "React", "Firebase", "Gemini API"],
     technologies: [Icons.flutter, Icons.nextjs, Icons.supabase],
     imageId: "adibasa",
     galleryImageIds: ["adibasa-gallery-1", "adibasa-gallery-2"],
     githubUrl: "https://github.com/zaidanzha/adibasa-app",
+    liveDemoUrl: "https://adibasa.app",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.adibasa.app&pcampaignid=web_share",
   },
   {
     slug: "streetware-app",
@@ -116,6 +119,12 @@ export const SKILLS: Skill[] = [
        { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
     ]
   },
+    { 
+    name: "React", 
+    validations: [
+      { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+    ]
+  },
   { 
     name: "UI/UX Design", 
     validations: [
@@ -137,9 +146,6 @@ export const SKILLS: Skill[] = [
       { type: 'certificate', title: 'Relevant Certificates', itemIds: ["cert-jna"] }
     ]
   },
-  { name: "React", validations: [
-      { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
-  ] },
   { 
     name: "Supabase", 
     validations: [
@@ -197,6 +203,7 @@ export const SOFT_SKILLS: Skill[] = [
         ]
     }
 ];
+
 
 export const LEADERSHIP_EXPERIENCE: Experience[] = [
     {

@@ -20,6 +20,14 @@ type ProjectPageProps = {
   };
 };
 
+const PlayStoreIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <path d="M3.86 2.14a.5.5 0 0 0-.86.43v18.86a.5.5 0 0 0 .86.43l16-9.43a.5.5 0 0 0 0-.86Z"/>
+        <path d="M3 21V3l11 4-5.5 3Z"/>
+    </svg>
+);
+
+
 export default function ProjectPage({ params }: ProjectPageProps) {
   const project = getProjectBySlug(params.slug);
 
@@ -93,7 +101,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </div>
         </div>
 
-        <div className="flex justify-center gap-4 mt-12">
+        <div className="flex flex-wrap justify-center gap-4 mt-12">
             {project.githubUrl && (
                 <Button asChild size="lg">
                     <Link href={project.githubUrl} target="_blank">
@@ -107,6 +115,14 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                     <Link href={project.liveDemoUrl} target="_blank">
                         <PlayCircle className="mr-2" />
                         Live Demo
+                    </Link>
+                </Button>
+            )}
+            {project.playStoreUrl && (
+                <Button asChild size="lg" variant="outline">
+                    <Link href={project.playStoreUrl} target="_blank">
+                        <PlayStoreIcon className="mr-2" />
+                        Get on Google Play
                     </Link>
                 </Button>
             )}
