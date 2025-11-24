@@ -49,6 +49,7 @@ export type Skill = {
 export type Achievement = {
   title: string;
   description: string;
+  type: 'win' | 'participation';
   url?: string;
 }
 
@@ -113,6 +114,9 @@ export const SKILLS: Skill[] = [
             { type: 'project', title: 'Related Projects', slugs: ["adibasa-app", "streetware-app", "vehicare-app"] }
         ]
     },
+    {
+        name: "Java & Kotlin",
+    },
     { 
         name: "Next.js",
         validations: [
@@ -126,7 +130,10 @@ export const SKILLS: Skill[] = [
         ]
     },
     {
-        name: "TypeScript",
+        name: "HTML & CSS",
+    },
+    {
+        name: "JavaScript & TypeScript",
         validations: [
           { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
         ]
@@ -260,7 +267,7 @@ export const LEADERSHIP_EXPERIENCE: Experience[] = [
              "Conducting Internal Webinar and various IEEE Events",
              "Making sure that the member are always connected to each other"
         ],
-        evidenceImageIds: []
+        evidenceImageIds: ["ieee-cert"]
     },
     {
         slug: "efortech-dv",
@@ -284,7 +291,7 @@ export const LEADERSHIP_EXPERIENCE: Experience[] = [
             "Coordinated schedules, communication, and event logistics involving faculty participation.",
             "Ensured smooth collaboration between the committee’s agenda and academic requirements."
         ],
-        evidenceImageIds: []
+        evidenceImageIds: ["osjur-cert"]
     },
 ];
 
@@ -292,15 +299,38 @@ export const ACHIEVEMENTS: Achievement[] = [
     {
         title: "3rd Winner",
         description: "JA Titan Business Competition, PJI",
+        type: "win"
     },
     {
-        title: "Favorite Winner",
+        title: "Top 16 Finalist",
         description: "Duta Pelajar Putra, JawaPos SMA Awards 2023",
+        type: "win",
         url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4",
     },
     {
-        title: "Cyber Champion (CTF)",
-        description: "DTS TSA 2024",
+        title: "Participant (Cyber Champion)",
+        description: "DTS TSA CTF 2024",
+        type: "participation"
+    },
+    {
+      title: "Participant",
+      description: "Gemastik 2024 – Cyber Security CTF",
+      type: "participation"
+    },
+    {
+      title: "Participant",
+      description: "Gemastik 2025 – Desain Pengalam Pengguna",
+      type: "participation"
+    },
+    {
+      title: "Participant",
+      description: "Fasilkom UI/UX Competition 2024",
+      type: "participation"
+    },
+    {
+      title: "Participant",
+      description: "Technofair 2024 – Capture The Flag",
+      type: "participation"
     },
 ];
 

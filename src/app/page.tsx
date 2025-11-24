@@ -11,6 +11,7 @@ import {
   ArrowRight,
   Youtube,
   MessageCircle,
+  Star,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -235,18 +236,28 @@ export default function HomePage() {
             </p>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {ACHIEVEMENTS.map((ach) => {
+             {ACHIEVEMENTS.map((ach) => {
+              const Icon = ach.type === "win" ? Award : Star;
               const content = (
                 <Card className="text-center flex flex-col h-full hover:scale-105 transition-transform duration-200">
                   <CardHeader>
                     <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                       <Award className="h-6 w-6 text-primary" />
+                      <Icon className="h-6 w-6 text-primary" />
                     </div>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <CardTitle className="text-lg">{ach.title}</CardTitle>
                     <CardDescription className="mt-2">{ach.description}</CardDescription>
                   </CardContent>
+                  {ach.url && (
+                    <CardFooter className="justify-center">
+                      <Button variant="link" asChild>
+                        <a href={ach.url} target="_blank" rel="noopener noreferrer">
+                          Watch Video
+                        </a>
+                      </Button>
+                    </CardFooter>
+                  )}
                 </Card>
               );
 
