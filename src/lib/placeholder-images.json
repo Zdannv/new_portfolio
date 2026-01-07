@@ -110,13 +110,13 @@
     },
     {
       "id": "budayago-1",
-       "description": "BudayaGO 2025 Grand Final presentation session.",
+       "description": "BudayaGO 2025 Winning Certificate.",
        "imageUrl": "/budayago1.jpg",
-       "imageHint": "competition presentation"
+       "imageHint": "certificate appreciation"
     },
     {
       "id": "budayago-2",
-      "description": "Top 10 Grand Finalist BudayaGO 2025 announcement.",
+      "description": "BudayaGO 2025 Grand Final presentation session.",
       "imageUrl": "/budayago2.jpg",
       "imageHint": "award ceremony"
     },
@@ -125,7 +125,12 @@
       "description": "Team photo at BudayaGO 2025 Grand Final (KEMENBUD).",
       "imageUrl": "/budayago3.jpg",
       "imageHint": "team photo"
-}
-
+    },
+    {
+      "id": "ja-titan",
+      "description": "JA Titan Certificate",
+      "imageUrl": "/JA_Titan.jpg",
+      "imageHint": "certificate appreciation"
+    }
   ]
 }

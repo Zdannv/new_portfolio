@@ -34,6 +34,7 @@ import {
 } from "@/lib/data";
 import { placeholderImages } from "@/lib/placeholder-images";
 import { SkillDialog } from "@/components/skill-dialog";
+import { AchievementDialog } from "@/components/achievement-dialog";
 
 const profileImage = placeholderImages.find(p => p.id === "profile");
 
@@ -241,7 +242,7 @@ export default function HomePage() {
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
              {ACHIEVEMENTS.map((ach, index) => {
               const Icon = ach.type === "win" ? Award : Star;
-              const content = (
+              const cardContent = (
                 <Card className="text-center flex flex-col h-full hover:scale-105 transition-transform duration-200" data-cursor-pointer>
                   <CardHeader>
                     <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
@@ -252,13 +253,20 @@ export default function HomePage() {
                     <CardTitle className="text-lg">{ach.title}</CardTitle>
                     <CardDescription className="mt-2">{ach.description}</CardDescription>
                   </CardContent>
-                  {ach.url && (
+                  {(ach.url || ach.imageIds) && (
                     <CardFooter className="justify-center">
-                       <Button variant="link" asChild>
+                      {ach.url && (
+                        <Button variant="link" asChild>
                           <a href={ach.url} target="_blank" rel="noopener noreferrer">
                             Watch Video
                           </a>
                         </Button>
+                      )}
+                      {ach.imageIds && ach.imageIds.length > 0 && (
+                        <AchievementDialog achievement={ach}>
+                           <Button variant="link" data-cursor-pointer>View Evidence</Button>
+                        </AchievementDialog>
+                      )}
                     </CardFooter>
                   )}
                 </Card>
@@ -266,7 +274,7 @@ export default function HomePage() {
 
               return (
                 <div key={`${ach.title}-${index}`} className="h-full">
-                  {content}
+                  {cardContent}
                 </div>
               );
             })}

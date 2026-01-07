@@ -301,18 +301,19 @@ export const ACHIEVEMENTS: Achievement[] = [
     },    
     {
         title: "3rd Winner",
-        description: "JA Titan Business Competition, PJI",
-        type: "win"
+        description: " Developed and executed a virtual business strategy in a simulated market environment, competing against teams from various schools across Indonesia. Demonstrated strong decision-making, financial planning, and teamwork.",
+        type: "win",
+        imageIds: ["ja-titan"]
     },
     {
         title: "Top 16 Finalist",
-        description: "Duta Pelajar Putra, JawaPos SMA Awards 2023",
+        description: "Represented school in a province-wide student ambassador competition focused on leadership, public speaking, and character development. Successfully advanced to the final 5 from a large pool of candidates.",
         type: "win",
         url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4",
     },
     {
         title: "Cyber Champion (CTF)",
-        description: "DTS TSA CTF 2024 (Participation)",
+        description: "Competed in national CTF organized by the Digital Talent Scholarship, showcasing ethical hacking and analytical skills.",
         type: "participation"
     },
     {
