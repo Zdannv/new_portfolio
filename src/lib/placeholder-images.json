@@ -107,6 +107,25 @@
       "description": "Sertifikat Officer Liaison Ospek Jurusan",
       "imageUrl": "/LO.png",
       "imageHint": "event certificate"
-    }
+    },
+    {
+      "id": "budayago-1",
+       "description": "BudayaGO 2025 Grand Final presentation session.",
+       "imageUrl": "/budayago1.jpg",
+       "imageHint": "competition presentation"
+    },
+    {
+      "id": "budayago-2",
+      "description": "Top 10 Grand Finalist BudayaGO 2025 announcement.",
+      "imageUrl": "/budayago2.jpg",
+      "imageHint": "award ceremony"
+    },
+    {
+      "id": "budayago-3",
+      "description": "Team photo at BudayaGO 2025 Grand Final (KEMENBUD).",
+      "imageUrl": "/budayago3.jpg",
+      "imageHint": "team photo"
+}
+
   ]
 }

@@ -51,7 +51,9 @@ export type Achievement = {
   description: string;
   type: 'win' | 'participation';
   url?: string;
+  imageIds?: string[];
 }
+
 
 export const PROJECTS: Project[] = [
   {
@@ -291,6 +293,12 @@ export const LEADERSHIP_EXPERIENCE: Experience[] = [
 ];
 
 export const ACHIEVEMENTS: Achievement[] = [
+    {
+        title: "Top 10 Grand Finalist – BudayaGO 2025 (KEMENBUD)",
+        description: "Selected as one of the Top 10 teams from over 600 applicants across Indonesia to compete in the Grand Final in Jakarta. Presented \"Adibasa\" as a technological innovation aimed at preserving and revitalizing Indonesian culture.",
+        type: "win",
+        imageIds: ["budayago-1", "budayago-2", "budayago-3"]
+    },    
     {
         title: "3rd Winner",
         description: "JA Titan Business Competition, PJI",
