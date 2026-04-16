@@ -20,13 +20,14 @@ import {
 } from "@/components/ui/carousel";
 
 type ExperiencePageProps = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-export default function ExperiencePage({ params }: ExperiencePageProps) {
-  const experience = getExperienceBySlug(params.slug);
+export default async function ExperiencePage({ params }: ExperiencePageProps) {
+  const { slug } = await params;
+  const experience = getExperienceBySlug(slug);
 
   if (!experience) {
     notFound();

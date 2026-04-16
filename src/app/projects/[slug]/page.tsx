@@ -15,9 +15,9 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 
 type ProjectPageProps = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 const PlayStoreIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -28,8 +28,9 @@ const PlayStoreIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = getProjectBySlug(params.slug);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
 
   if (!project) {
     notFound();
@@ -71,7 +72,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                           src={image.imageUrl}
                           alt={image.description}
                           fill
-                          className="rounded-lg object-cover"
+                          className="rounded-lg object-contain"
                           data-ai-hint={image.imageHint}
                         />
                       </CardContent>
@@ -114,7 +115,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                 <Button asChild size="lg" variant="outline">
                     <Link href={project.liveDemoUrl} target="_blank">
                         <PlayCircle className="mr-2" />
-                        Landing Page
+                        Website
                     </Link>
                 </Button>
             )}

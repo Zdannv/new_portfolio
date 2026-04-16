@@ -57,6 +57,32 @@ export type Achievement = {
 
 export const PROJECTS: Project[] = [
   {
+    slug: "kndi-task-manager",
+    title: "KNDI Task Manager (Web App)",
+    role: "Full-Stack Developer | 2026",
+    description: "A custom web-based task management system designed to streamline the handling of client-assigned projects and tasks with AI-driven face recognition.",
+    longDescription: "As a Full-Stack Developer, I engineered a custom web-based task management system designed to streamline the handling of client-assigned projects and tasks. Beyond basic project tracking, the platform integrates comprehensive internal tools, including daily employee logtime tracking and centralized data management features for company managers. A major technical achievement was the integration of a custom AI-driven face recognition system for automated employee attendance, which seamlessly feeds data into the core application. To ensure high scalability and maintainability, the entire system was built on a modern microservices architecture using Docker, effectively isolating each feature (such as the core web app and the Python-based face recognition service) into separate, independent containers.",
+    tags: ["Web App", "Full-Stack", "AI", "Microservices", "Docker", "Task Management"],
+    technologies: [],
+    imageId: "tm-7",
+    galleryImageIds: ["tm-1", "tm-2", "tm-3", "tm-4", "tm-5", "tm-6", "tm-7", "tm-8", "tm-9", "tm-10", "tm-11", "tm-12", "tm-13", "tm-14"],
+    githubUrl: "https://github.com/Zdannv/KNDI_TASK-MANAGER",
+    liveDemoUrl: "https://tm.tempatcangkr.uk/"
+  },
+  {
+    slug: "kndi-elearning",
+    title: "KNDI Japanese E-Learning (Web App)",
+    role: "Full-Stack Developer | 2026",
+    description: "An exclusive internal e-learning platform to facilitate corporate Japanese language training, featuring a dynamic interactive quiz builder.",
+    longDescription: "Developed an exclusive internal e-learning platform to facilitate corporate Japanese language training, successfully transitioning the company away from restrictive public learning tools. As a Full-Stack Developer, I designed the system to empower the communicator division (acting as instructors) with a dynamic and flexible quiz builder. This feature allows instructors to easily create and manage highly interactive assessments tailored to language learning, supporting diverse formats such as multiple-choice, image-based questions, audio comprehension, matching cards, and fill-in-the-blank exercises. This project demonstrates my ability to build customized, user-centric educational platforms that directly improve internal upskilling and operational efficiency.",
+    tags: ["Web App", "Full-Stack", "E-Learning", "Quiz Builder"],
+    technologies: [],
+    imageId: "elearning-4",
+    galleryImageIds: ["elearning-1", "elearning-2", "elearning-3", "elearning-4", "elearning-5", "elearning-6", "elearning-7", "elearning-8", "elearning-9", "elearning-10", "elearning-11"],
+    githubUrl: "https://github.com/Zdannv/KNDI_E-Learning",
+    liveDemoUrl: ""
+  },
+  {
     slug: "adibasa-app",
     title: "Adibasa (Mobile & Web App Ecosystem)",
     role: "Full-Stack Developer & AI Integrator",
@@ -73,10 +99,10 @@ export const PROJECTS: Project[] = [
   {
     slug: "streetware-app",
     title: "StreetWare (Android App)",
-    role: "Product Owner",
+    role: "Mobile Developer",
     description: "An e-government app that enables citizens to report damaged roads and public facilities using geolocation and photo evidence.",
     longDescription: "As Product Owner, I led the development of StreetWare, a mobile e-government application built with Flutter and Supabase that enables citizens to report damaged roads and public facilities in Surabaya. The app features geolocation-based reporting, photo evidence upload, and real-time notifications, with role-based access allowing government officials to verify and update report statuses directly within the mobile platform, enhancing transparency and public participation in infrastructure maintenance.",
-    tags: ["Mobile App", "E-Government", "Product Owner"],
+    tags: ["Mobile App", "E-Government"],
     technologies: [Icons.flutter, Icons.supabase],
     imageId: "streetware",
     galleryImageIds: ["streetware-gallery-1", "streetware-gallery-2"],

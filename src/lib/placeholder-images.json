@@ -131,6 +131,31 @@
       "description": "JA Titan Certificate",
       "imageUrl": "/JA_Titan.jpg",
       "imageHint": "certificate appreciation"
-    }
+    },
+    { "id": "tm-1", "description": "KNDI Task Manager screenshot 1", "imageUrl": "/TM1.png", "imageHint": "web app" },
+    { "id": "tm-2", "description": "KNDI Task Manager screenshot 2", "imageUrl": "/TM2.png", "imageHint": "web app" },
+    { "id": "tm-3", "description": "KNDI Task Manager screenshot 3", "imageUrl": "/TM3.png", "imageHint": "web app" },
+    { "id": "tm-4", "description": "KNDI Task Manager screenshot 4", "imageUrl": "/TM4.png", "imageHint": "web app" },
+    { "id": "tm-5", "description": "KNDI Task Manager screenshot 5", "imageUrl": "/TM5.png", "imageHint": "web app" },
+    { "id": "tm-6", "description": "KNDI Task Manager screenshot 6", "imageUrl": "/TM6.png", "imageHint": "web app" },
+    { "id": "tm-7", "description": "KNDI Task Manager screenshot 7", "imageUrl": "/TM7.png", "imageHint": "web app" },
+    { "id": "tm-8", "description": "KNDI Task Manager screenshot 8", "imageUrl": "/TM8.png", "imageHint": "web app" },
+    { "id": "tm-9", "description": "KNDI Task Manager screenshot 9", "imageUrl": "/TM9.png", "imageHint": "web app" },
+    { "id": "tm-10", "description": "KNDI Task Manager screenshot 10", "imageUrl": "/TM10.png", "imageHint": "web app" },
+    { "id": "tm-11", "description": "KNDI Task Manager screenshot 11", "imageUrl": "/TM11.png", "imageHint": "web app" },
+    { "id": "tm-12", "description": "KNDI Task Manager screenshot 12", "imageUrl": "/TM12.png", "imageHint": "web app" },
+    { "id": "tm-13", "description": "KNDI Task Manager screenshot 13", "imageUrl": "/TM13.png", "imageHint": "web app" },
+    { "id": "tm-14", "description": "KNDI Task Manager screenshot 14", "imageUrl": "/TM14.png", "imageHint": "web app" },
+    { "id": "elearning-1", "description": "KNDI E-Learning screenshot 1", "imageUrl": "/E-Learning1.png", "imageHint": "e-learning" },
+    { "id": "elearning-2", "description": "KNDI E-Learning screenshot 2", "imageUrl": "/E-Learning2.png", "imageHint": "e-learning" },
+    { "id": "elearning-3", "description": "KNDI E-Learning screenshot 3", "imageUrl": "/E-Learning3.png", "imageHint": "e-learning" },
+    { "id": "elearning-4", "description": "KNDI E-Learning screenshot 4", "imageUrl": "/E-Learning4.png", "imageHint": "e-learning" },
+    { "id": "elearning-5", "description": "KNDI E-Learning screenshot 5", "imageUrl": "/E-Learning5.png", "imageHint": "e-learning" },
+    { "id": "elearning-6", "description": "KNDI E-Learning screenshot 6", "imageUrl": "/E-Learning6.png", "imageHint": "e-learning" },
+    { "id": "elearning-7", "description": "KNDI E-Learning screenshot 7", "imageUrl": "/E-Learning7.png", "imageHint": "e-learning" },
+    { "id": "elearning-8", "description": "KNDI E-Learning screenshot 8", "imageUrl": "/E-Learning8.png", "imageHint": "e-learning" },
+    { "id": "elearning-9", "description": "KNDI E-Learning screenshot 9", "imageUrl": "/E-Learning9.png", "imageHint": "e-learning" },
+    { "id": "elearning-10", "description": "KNDI E-Learning screenshot 10", "imageUrl": "/E-Learning10.png", "imageHint": "e-learning" },
+    { "id": "elearning-11", "description": "KNDI E-Learning screenshot 11", "imageUrl": "/E-Learning11.png", "imageHint": "e-learning" }
   ]
 }
