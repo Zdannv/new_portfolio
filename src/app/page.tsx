@@ -108,7 +108,7 @@ export default function HomePage() {
             return (
               <Card key={project.slug} className="flex flex-col overflow-hidden group">
                 {projectImage && (
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                  <Link href={`/projects/${project.slug}`} className="relative aspect-[4/3] overflow-hidden block">
                     <Image
                       src={projectImage.imageUrl}
                       alt={project.title}
@@ -116,7 +116,7 @@ export default function HomePage() {
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                       data-ai-hint={projectImage.imageHint}
                     />
-                  </div>
+                  </Link>
                 )}
                 <CardHeader>
                   <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
@@ -255,19 +255,36 @@ export default function HomePage() {
              {ACHIEVEMENTS.map((ach, index) => {
               const Icon = ach.type === "win" ? Award : Star;
               const isFeatured = index === 0 && ach.imageIds && ach.imageIds.length > 0;
-              const featuredImage = isFeatured ? placeholderImages.find(p => p.id === ach.imageIds![0]) : null;
+              const featuredImages = isFeatured ? ach.imageIds!.map(id => placeholderImages.find(p => p.id === id)).filter(Boolean) : [];
 
               const cardContent = (
                 <Card className={`relative flex ${isFeatured ? "flex-col md:flex-row md:items-center text-left" : "flex-col text-center"} h-full hover:shadow-xl transition-all duration-300 ${isFeatured ? 'bg-primary/5 border-primary/30 border-2' : 'hover:scale-105'}`} data-cursor-pointer>
-                  {isFeatured && featuredImage && (
-                    <div className="md:w-[45%] relative aspect-video md:aspect-[4/3] overflow-hidden rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
-                       <Image
-                          src={featuredImage.imageUrl}
-                          alt={ach.title}
-                          fill
-                          className="object-cover transition-transform duration-500 hover:scale-105"
-                          data-ai-hint={featuredImage.imageHint}
-                        />
+                  {isFeatured && featuredImages.length > 0 && (
+                    <div className="md:w-[45%] relative aspect-video md:aspect-[4/3] rounded-t-lg md:rounded-l-lg md:rounded-tr-none flex overflow-hidden self-stretch">
+                       <div className={`${featuredImages.length > 1 ? 'w-2/3 h-full pr-1' : 'w-full h-full'} relative`}>
+                          <Image
+                              src={featuredImages[0]!.imageUrl}
+                              alt={ach.title}
+                              fill
+                              className="object-cover transition-transform duration-500 hover:scale-105"
+                              data-ai-hint={featuredImages[0]!.imageHint}
+                           />
+                       </div>
+                       {featuredImages.length > 1 && (
+                         <div className="w-1/3 flex flex-col h-full gap-1">
+                            {featuredImages.slice(1, 3).map((img) => (
+                              <div key={img!.id} className="relative flex-1">
+                                <Image
+                                  src={img!.imageUrl}
+                                  alt={ach.title}
+                                  fill
+                                  className="object-cover transition-transform duration-500 hover:scale-105"
+                                  data-ai-hint={img!.imageHint}
+                                />
+                              </div>
+                            ))}
+                         </div>
+                       )}
                     </div>
                   )}
                   <div className={`${isFeatured ? "md:w-[55%] p-2 md:p-6 flex flex-col h-full justify-center" : "flex flex-col h-full"}`}>
