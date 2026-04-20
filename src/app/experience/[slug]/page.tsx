@@ -1,14 +1,15 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { getExperienceBySlug, getImageById } from "@/lib/data";
+import { getExperienceBySlug, getImageById, getProjectBySlug } from "@/lib/data";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
+  CardFooter,
 } from "@/components/ui/card";
-import { CheckCircle, ArrowLeft } from "lucide-react";
+import { CheckCircle, ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
@@ -83,6 +84,37 @@ export default async function ExperiencePage({ params }: ExperiencePageProps) {
               ))}
             </ul>
           </section>
+
+          {experience.relatedProjectSlugs && experience.relatedProjectSlugs.length > 0 && (
+            <section className="mt-10">
+              <h2 className="text-2xl font-bold mb-4 font-headline">
+                Related Projects
+              </h2>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {experience.relatedProjectSlugs.map(slug => {
+                  const project = getProjectBySlug(slug);
+                  if (!project) return null;
+                  return (
+                    <Card key={project.slug} className="group">
+                      <CardHeader>
+                        <CardTitle className="text-lg">{project.title}</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-sm text-muted-foreground line-clamp-2">{project.description}</p>
+                      </CardContent>
+                      <CardFooter>
+                        <Button asChild variant="link" size="sm" className="p-0 text-primary">
+                          <Link href={`/projects/${project.slug}`}>
+                            View Project <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
+                          </Link>
+                        </Button>
+                      </CardFooter>
+                    </Card>
+                  );
+                })}
+              </div>
+            </section>
+          )}
         </main>
         <aside>
           {evidenceImages.length > 0 && (

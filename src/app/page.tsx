@@ -149,10 +149,10 @@ export default function HomePage() {
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
             <Users className="inline-block h-8 w-8 mr-2 text-primary" />
-            Leadership & Experience
+            Work & Leadership
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            My journey in leading communities and driving initiatives.
+            My professional journey and experience in leading communities.
           </p>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2">
@@ -160,8 +160,20 @@ export default function HomePage() {
              <Link href={`/experience/${exp.slug}`} key={exp.slug} className="block group" data-cursor-pointer>
               <Card className="flex flex-col h-full transition-all duration-300 ease-in-out group-hover:shadow-xl group-hover:-translate-y-2">
                 <CardHeader>
-                  <CardTitle>{exp.role}</CardTitle>
-                  <CardDescription className="font-semibold text-primary">{exp.organization}</CardDescription>
+                  <div className="flex justify-between items-start mb-2 gap-4">
+                    <div>
+                      <CardTitle>{exp.role}</CardTitle>
+                      <CardDescription className="font-semibold text-primary mt-1">{exp.organization}</CardDescription>
+                    </div>
+                    {exp.tag && (
+                      <Badge 
+                        variant={exp.tag === 'Side Job' ? 'outline' : exp.tag === 'Job Experience' ? 'default' : 'secondary'} 
+                        className={`whitespace-nowrap px-3 py-1 text-xs font-bold shadow-sm ${exp.tag === 'Side Job' ? 'border-primary text-primary bg-primary/10' : ''}`}
+                      >
+                        {exp.tag}
+                      </Badge>
+                    )}
+                  </div>
                   <p className="text-sm text-muted-foreground">{exp.period}</p>
                 </CardHeader>
                 <CardContent className="flex-grow">

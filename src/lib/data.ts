@@ -33,6 +33,8 @@ export type Experience = {
     description: string;
     achievements: string[];
     evidenceImageIds: string[];
+    tag?: 'Job Experience' | 'Leadership Experience' | 'Side Job';
+    relatedProjectSlugs?: string[];
 }
 
 export type Validation = 
@@ -255,6 +257,33 @@ export const SOFT_SKILLS: Skill[] = [
 
 export const LEADERSHIP_EXPERIENCE: Experience[] = [
     {
+        slug: "kndi-internship",
+        role: "Fullstack Engineer (Intern)",
+        organization: "PT Kyodo News Digital Indonesia",
+        period: "Jan 2026 - Jun 2026",
+        description: "Completed a 6-month internship as a Fullstack Engineer, focusing on internal tools and educational platforms to improve company operations and training.",
+        achievements: [
+            "Developed the KNDI Task Manager with an integrated AI face recognition system.",
+            "Built the KNDI Japanese E-Learning platform featuring a dynamic and flexible quiz builder."
+        ],
+        evidenceImageIds: [],
+        tag: "Job Experience",
+        relatedProjectSlugs: ["kndi-task-manager", "kndi-elearning"]
+    },
+    {
+        slug: "efortech-dv",
+        role: "Trainer",
+        organization: "Efortech Data Visualization",
+        period: "2024 - Now",
+        description: "Conducted training for Kediri Regional Development Planning Agency (BAPPEDA Kediri) on developing information system dashboards using Tableau.",
+        achievements: [
+            "Trained government agency staff on data visualization and dashboard development.",
+            "Delivered technical material on Tableau for information system implementation."
+        ],
+        evidenceImageIds: ["efortech-evidence-1", "efortech-evidence-2"],
+        tag: "Side Job"
+    },
+    {
         slug: "pens-osc",
         role: "Vice President",
         organization: "Open Source Community PENS",
@@ -265,7 +294,8 @@ export const LEADERSHIP_EXPERIENCE: Experience[] = [
             "Taught various topics including networking, Linux, and cybersecurity to new members.",
             "Represented the community during Pekan Komunitas and introduced it to new students.",
         ],
-        evidenceImageIds: ["pens-osc-evidence-1", "pens-osc-evidence-2"]
+        evidenceImageIds: ["pens-osc-evidence-1", "pens-osc-evidence-2"],
+        tag: "Leadership Experience"
     },
     {
         slug: "hipmi-pens",
@@ -278,7 +308,8 @@ export const LEADERSHIP_EXPERIENCE: Experience[] = [
             "Create a cadre development/leadership training program.",
             "Maintain relationships between members and ensure active participation."
         ],
-        evidenceImageIds: []
+        evidenceImageIds: [],
+        tag: "Leadership Experience"
     },
     {
         slug: "ieee-sb-pens",
@@ -290,19 +321,8 @@ export const LEADERSHIP_EXPERIENCE: Experience[] = [
              "Conducting Internal Webinar and various IEEE Events",
              "Making sure that the member are always connected to each other"
         ],
-        evidenceImageIds: ["ieee-cert"]
-    },
-    {
-        slug: "efortech-dv",
-        role: "Trainer",
-        organization: "Efortech Data Visualization",
-        period: "2024 - Now",
-        description: "Conducted training for Kediri Regional Development Planning Agency (BAPPEDA Kediri) on developing information system dashboards using Tableau.",
-        achievements: [
-            "Trained government agency staff on data visualization and dashboard development.",
-            "Delivered technical material on Tableau for information system implementation."
-        ],
-        evidenceImageIds: ["efortech-evidence-1", "efortech-evidence-2"]
+        evidenceImageIds: ["ieee-cert"],
+        tag: "Leadership Experience"
     },
      {
         slug: "osjur-pens",
@@ -314,7 +334,8 @@ export const LEADERSHIP_EXPERIENCE: Experience[] = [
             "Coordinated schedules, communication, and event logistics involving faculty participation.",
             "Ensured smooth collaboration between the committee’s agenda and academic requirements."
         ],
-        evidenceImageIds: ["osjur-cert"]
+        evidenceImageIds: ["osjur-cert"],
+        tag: "Leadership Experience"
     },
 ];
 
