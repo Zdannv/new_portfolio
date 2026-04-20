@@ -254,38 +254,69 @@ export default function HomePage() {
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
              {ACHIEVEMENTS.map((ach, index) => {
               const Icon = ach.type === "win" ? Award : Star;
+              const isFeatured = index === 0 && ach.imageIds && ach.imageIds.length > 0;
+              const featuredImage = isFeatured ? placeholderImages.find(p => p.id === ach.imageIds![0]) : null;
+
               const cardContent = (
-                <Card className="text-center flex flex-col h-full hover:scale-105 transition-transform duration-200" data-cursor-pointer>
-                  <CardHeader>
-                    <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                      <Icon className="h-6 w-6 text-primary" />
+                <Card className={`relative flex ${isFeatured ? "flex-col md:flex-row md:items-center text-left" : "flex-col text-center"} h-full hover:shadow-xl transition-all duration-300 ${isFeatured ? 'bg-primary/5 border-primary/30 border-2' : 'hover:scale-105'}`} data-cursor-pointer>
+                  {isFeatured && featuredImage && (
+                    <div className="md:w-[45%] relative aspect-video md:aspect-[4/3] overflow-hidden rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
+                       <Image
+                          src={featuredImage.imageUrl}
+                          alt={ach.title}
+                          fill
+                          className="object-cover transition-transform duration-500 hover:scale-105"
+                          data-ai-hint={featuredImage.imageHint}
+                        />
                     </div>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <CardTitle className="text-lg">{ach.title}</CardTitle>
-                    <CardDescription className="mt-2">{ach.description}</CardDescription>
-                  </CardContent>
-                  {(ach.url || ach.imageIds) && (
-                    <CardFooter className="justify-center">
-                      {ach.url && (
-                        <Button variant="link" asChild>
-                          <a href={ach.url} target="_blank" rel="noopener noreferrer">
-                            Watch Video
-                          </a>
-                        </Button>
-                      )}
-                      {ach.imageIds && ach.imageIds.length > 0 && (
-                        <AchievementDialog achievement={ach}>
-                           <Button variant="link" data-cursor-pointer>View Evidence</Button>
-                        </AchievementDialog>
-                      )}
-                    </CardFooter>
                   )}
+                  <div className={`${isFeatured ? "md:w-[55%] p-2 md:p-6 flex flex-col h-full justify-center" : "flex flex-col h-full"}`}>
+                    <CardHeader className={`${isFeatured ? "pb-2" : ""}`}>
+                      {!isFeatured ? (
+                         <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                           <Icon className="h-6 w-6 text-primary" />
+                         </div>
+                      ) : (
+                        <div className="mb-3">
+                           <Badge variant="default" className="shadow-sm font-semibold bg-primary text-primary-foreground">
+                              <Award className="w-3 h-3 mr-1 inline-block" />
+                              Grand Finalist Highlight
+                           </Badge>
+                        </div>
+                      )}
+                      <CardTitle className={`text-lg ${isFeatured ? "text-xl md:text-2xl font-bold font-headline" : ""}`}>
+                        {ach.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <CardDescription className={`mt-2 ${isFeatured ? "text-base md:text-lg text-foreground/80 leading-relaxed" : ""}`}>
+                        {ach.description}
+                      </CardDescription>
+                    </CardContent>
+                    {(ach.url || ach.imageIds) && (
+                      <CardFooter className={`${isFeatured ? "justify-start pt-2" : "justify-center"}`}>
+                        {ach.url && (
+                          <Button variant={isFeatured ? "default" : "link"} size={isFeatured ? "sm" : "default"} asChild className={isFeatured ? "mr-3" : ""}>
+                            <a href={ach.url} target="_blank" rel="noopener noreferrer">
+                              Watch Video
+                            </a>
+                          </Button>
+                        )}
+                        {ach.imageIds && ach.imageIds.length > 0 && (
+                          <AchievementDialog achievement={ach}>
+                             <Button variant={isFeatured ? "outline" : "link"} size={isFeatured ? "sm" : "default"} className={isFeatured ? "font-semibold border-primary/50 hover:bg-primary hover:text-primary-foreground transition-colors" : ""} data-cursor-pointer>
+                               {isFeatured ? "View Documentation Gallery" : "View Evidence"}
+                             </Button>
+                          </AchievementDialog>
+                        )}
+                      </CardFooter>
+                    )}
+                  </div>
                 </Card>
               );
 
               return (
-                <div key={`${ach.title}-${index}`} className="h-full">
+                <div key={`${ach.title}-${index}`} className={`h-full ${isFeatured ? "md:col-span-2 lg:col-span-3 mb-4" : ""}`}>
                   {cardContent}
                 </div>
               );

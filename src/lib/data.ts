@@ -378,11 +378,6 @@ export const ACHIEVEMENTS: Achievement[] = [
       description: "Fasilkom UI/UX Competition 2024",
       type: "participation"
     },
-    {
-      title: "Participant",
-      description: "Technofair 2024 – Capture The Flag",
-      type: "participation"
-    },
 ];
 
 // Helper function to get project by slug
