@@ -156,6 +156,15 @@
     { "id": "elearning-8", "description": "KNDI E-Learning screenshot 8", "imageUrl": "/E-Learning8.png", "imageHint": "e-learning" },
     { "id": "elearning-9", "description": "KNDI E-Learning screenshot 9", "imageUrl": "/E-Learning9.png", "imageHint": "e-learning" },
     { "id": "elearning-10", "description": "KNDI E-Learning screenshot 10", "imageUrl": "/E-Learning10.png", "imageHint": "e-learning" },
-    { "id": "elearning-11", "description": "KNDI E-Learning screenshot 11", "imageUrl": "/E-Learning11.png", "imageHint": "e-learning" }
+    { "id": "elearning-11", "description": "KNDI E-Learning screenshot 11", "imageUrl": "/E-Learning11.png", "imageHint": "e-learning" },
+    { "id": "cleanova1", "description": "Cleanova Circle screenshot 1", "imageUrl": "/cleanova1.png", "imageHint": "web app" },
+    { "id": "cleanova2", "description": "Cleanova Circle screenshot 2", "imageUrl": "/cleanova2.png", "imageHint": "web app" },
+    { "id": "cleanova3", "description": "Cleanova Circle screenshot 3", "imageUrl": "/cleanova3.png", "imageHint": "web app" },
+    { "id": "cleanova4", "description": "Cleanova Circle screenshot 4", "imageUrl": "/cleanova4.png", "imageHint": "web app" },
+    { "id": "cleanova5", "description": "Cleanova Circle screenshot 5", "imageUrl": "/cleanova5.png", "imageHint": "web app" },
+    { "id": "cleanova6", "description": "Cleanova Circle screenshot 6", "imageUrl": "/cleanova6.png", "imageHint": "web app" },
+    { "id": "cleanova7", "description": "Cleanova Circle screenshot 7", "imageUrl": "/cleanova7.png", "imageHint": "web app" },
+    { "id": "cleanova8", "description": "Cleanova Circle screenshot 8", "imageUrl": "/cleanova8.png", "imageHint": "web app" },
+    { "id": "cleanova9", "description": "Cleanova Circle screenshot 9", "imageUrl": "/cleanova9.png", "imageHint": "web app" }
   ]
 }

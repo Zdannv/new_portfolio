@@ -59,6 +59,19 @@ export type Achievement = {
 
 export const PROJECTS: Project[] = [
   {
+    slug: "cleanova-circle",
+    title: "Cleanova Circle",
+    role: "Sole Full-Stack Developer",
+    description: "A premium, exclusive e-learning and community platform designed for jewelry care enthusiasts and DIY practitioners.",
+    longDescription: "Cleanova Circle is a premium, exclusive e-learning and community platform designed for jewelry care enthusiasts and DIY practitioners. Architected and developed entirely from scratch, the platform serves as a dual-purpose web application: a highly interactive video learning portal for users and a robust, mobile-responsive Content Management System (CMS) for administrators. The system is deployed seamlessly on Vercel with a scalable cloud database infrastructure.\n\nKey features include a custom video interface with progress tracking, nested community discussions, a real-time engagement system (ranking popular videos), and personalized bookmarks/notes. For administrators, it offers a seamless document-to-web pipeline (converting .docx to Markdown), a live preview Markdown editor, and a mobile-first dashboard. Added automated workflows with NextAuth.js for security and Nodemailer for welcome emails. State-of-the-art UI crafted with Tailwind CSS, leveraging React's useTransition and Server Actions for optimistic updates.",
+    tags: ["Web App", "Full-Stack", "Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Supabase", "NextAuth.js", "CMS", "E-Learning"],
+    technologies: [Icons.nextjs, Icons.supabase],
+    imageId: "cleanova1",
+    galleryImageIds: ["cleanova1", "cleanova2", "cleanova3", "cleanova4", "cleanova5", "cleanova6", "cleanova7", "cleanova8", "cleanova9"],
+    githubUrl: "https://github.com/Zdannv/Cleanova-Circle",
+    liveDemoUrl: "https://cleanova-circle-phi.vercel.app/"
+  },
+  {
     slug: "kndi-task-manager",
     title: "KNDI Task Manager (Web App)",
     role: "Full-Stack Developer | 2026",
@@ -140,31 +153,31 @@ export const SKILLS: Skill[] = [
     { 
         name: "Next.js",
         validations: [
-           { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+           { type: 'project', title: 'Related Projects', slugs: ["cleanova-circle", "adibasa-app"] }
         ]
     },
     { 
         name: "React", 
         validations: [
-          { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+          { type: 'project', title: 'Related Projects', slugs: ["cleanova-circle", "adibasa-app"] }
         ]
     },
     {
         name: "HTML & CSS",
         validations: [
-            { type: 'project', title: 'Web Projects', slugs: ["adibasa-app"] }
+            { type: 'project', title: 'Web Projects', slugs: ["cleanova-circle", "adibasa-app"] }
         ]
     },
     {
         name: "JavaScript & TypeScript",
         validations: [
-          { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+          { type: 'project', title: 'Related Projects', slugs: ["cleanova-circle", "adibasa-app"] }
         ]
     },
     {
         name: "Tailwind CSS",
         validations: [
-          { type: 'project', title: 'Related Projects', slugs: ["adibasa-app"] }
+          { type: 'project', title: 'Related Projects', slugs: ["cleanova-circle", "adibasa-app"] }
         ]
     },
     { 
@@ -196,7 +209,7 @@ export const SKILLS: Skill[] = [
     { 
         name: "Supabase", 
         validations: [
-          { type: 'project', title: 'Related Projects', slugs: ["streetware-app"] }
+          { type: 'project', title: 'Related Projects', slugs: ["cleanova-circle", "streetware-app"] }
         ]
     },
     { 
