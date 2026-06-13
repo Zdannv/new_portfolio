@@ -66,8 +66,8 @@ export const PROJECTS: Project[] = [
     longDescription: "Cleanova Circle is a premium, exclusive e-learning and community platform designed for jewelry care enthusiasts and DIY practitioners. Architected and developed entirely from scratch, the platform serves as a dual-purpose web application: a highly interactive video learning portal for users and a robust, mobile-responsive Content Management System (CMS) for administrators. The system is deployed seamlessly on Vercel with a scalable cloud database infrastructure.\n\nKey features include a custom video interface with progress tracking, nested community discussions, a real-time engagement system (ranking popular videos), and personalized bookmarks/notes. For administrators, it offers a seamless document-to-web pipeline (converting .docx to Markdown), a live preview Markdown editor, and a mobile-first dashboard. Added automated workflows with NextAuth.js for security and Nodemailer for welcome emails. State-of-the-art UI crafted with Tailwind CSS, leveraging React's useTransition and Server Actions for optimistic updates.",
     tags: ["Web App", "Full-Stack", "Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Supabase", "NextAuth.js", "CMS", "E-Learning"],
     technologies: [Icons.nextjs, Icons.supabase],
-    imageId: "cleanova1",
-    galleryImageIds: ["cleanova1", "cleanova2", "cleanova3", "cleanova4", "cleanova5", "cleanova6", "cleanova7", "cleanova8", "cleanova9"],
+    imageId: "cleanovac1",
+    galleryImageIds: ["cleanovac1", "cleanovac2", "cleanovac3", "cleanovac4", "cleanovac5", "cleanovac6", "cleanovac7", "cleanovac8", "cleanovac9", "cleanovac10", "cleanovac11"],
     githubUrl: "https://github.com/Zdannv/Cleanova-Circle",
     liveDemoUrl: "https://cleanova-circle-phi.vercel.app/"
   },

@@ -157,14 +157,16 @@
     { "id": "elearning-9", "description": "KNDI E-Learning screenshot 9", "imageUrl": "/E-Learning9.png", "imageHint": "e-learning" },
     { "id": "elearning-10", "description": "KNDI E-Learning screenshot 10", "imageUrl": "/E-Learning10.png", "imageHint": "e-learning" },
     { "id": "elearning-11", "description": "KNDI E-Learning screenshot 11", "imageUrl": "/E-Learning11.png", "imageHint": "e-learning" },
-    { "id": "cleanova1", "description": "Cleanova Circle screenshot 1", "imageUrl": "/cleanova1.png", "imageHint": "web app" },
-    { "id": "cleanova2", "description": "Cleanova Circle screenshot 2", "imageUrl": "/cleanova2.png", "imageHint": "web app" },
-    { "id": "cleanova3", "description": "Cleanova Circle screenshot 3", "imageUrl": "/cleanova3.png", "imageHint": "web app" },
-    { "id": "cleanova4", "description": "Cleanova Circle screenshot 4", "imageUrl": "/cleanova4.png", "imageHint": "web app" },
-    { "id": "cleanova5", "description": "Cleanova Circle screenshot 5", "imageUrl": "/cleanova5.png", "imageHint": "web app" },
-    { "id": "cleanova6", "description": "Cleanova Circle screenshot 6", "imageUrl": "/cleanova6.png", "imageHint": "web app" },
-    { "id": "cleanova7", "description": "Cleanova Circle screenshot 7", "imageUrl": "/cleanova7.png", "imageHint": "web app" },
-    { "id": "cleanova8", "description": "Cleanova Circle screenshot 8", "imageUrl": "/cleanova8.png", "imageHint": "web app" },
-    { "id": "cleanova9", "description": "Cleanova Circle screenshot 9", "imageUrl": "/cleanova9.png", "imageHint": "web app" }
+    { "id": "cleanovac1", "description": "Cleanova Circle screenshot 1", "imageUrl": "/cleanovac1.png", "imageHint": "web app" },
+    { "id": "cleanovac2", "description": "Cleanova Circle screenshot 2", "imageUrl": "/cleanovac2.png", "imageHint": "web app" },
+    { "id": "cleanovac3", "description": "Cleanova Circle screenshot 3", "imageUrl": "/cleanovac3.png", "imageHint": "web app" },
+    { "id": "cleanovac4", "description": "Cleanova Circle screenshot 4", "imageUrl": "/cleanovac4.png", "imageHint": "web app" },
+    { "id": "cleanovac5", "description": "Cleanova Circle screenshot 5", "imageUrl": "/cleanovac5.png", "imageHint": "web app" },
+    { "id": "cleanovac6", "description": "Cleanova Circle screenshot 6", "imageUrl": "/cleanovac6.png", "imageHint": "web app" },
+    { "id": "cleanovac7", "description": "Cleanova Circle screenshot 7", "imageUrl": "/cleanovac7.png", "imageHint": "web app" },
+    { "id": "cleanovac8", "description": "Cleanova Circle screenshot 8", "imageUrl": "/cleanovac8.png", "imageHint": "web app" },
+    { "id": "cleanovac9", "description": "Cleanova Circle screenshot 9", "imageUrl": "/cleanovac9.png", "imageHint": "web app" },
+    { "id": "cleanovac10", "description": "Cleanova Circle screenshot 10", "imageUrl": "/cleanovac10.png", "imageHint": "web app" },
+    { "id": "cleanovac11", "description": "Cleanova Circle screenshot 11", "imageUrl": "/cleanovac11.png", "imageHint": "web app" }
   ]
 }
