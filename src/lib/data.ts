@@ -69,7 +69,7 @@ export const PROJECTS: Project[] = [
     imageId: "cleanovac1",
     galleryImageIds: ["cleanovac1", "cleanovac2", "cleanovac3", "cleanovac4", "cleanovac5", "cleanovac6", "cleanovac7", "cleanovac8", "cleanovac9", "cleanovac10", "cleanovac11"],
     githubUrl: "https://github.com/Zdannv/Cleanova-Circle",
-    liveDemoUrl: "https://cleanova-circle-phi.vercel.app/"
+    liveDemoUrl: "https://cleanova.id/"
   },
   {
     slug: "kndi-task-manager",
