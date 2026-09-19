@@ -368,8 +368,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     {
         title: "Top 16 Finalist",
         description: "Represented school in a province-wide student ambassador competition focused on leadership, public speaking, and character development. Successfully advanced to the final 5 from a large pool of candidates.",
-        type: "win",
-        url: "https://youtu.be/w_ULh5nufSI?si=da0C0Kp_DrQ1ipJ4",
+        type: "win"
     },
     {
         title: "Cyber Champion (CTF)",
